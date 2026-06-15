@@ -4,489 +4,869 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wei Yu 俞薇 — Assistant Professor, NUS</title>
-  <meta name="description" content="Wei Yu (俞薇) is an Assistant Professor at NUS studying psychological and behavioral factors underlying entrepreneurship and innovation." />
+  <meta name="description" content="Wei Yu (俞薇) is an Assistant Professor at NUS studying the psychological and behavioral factors underlying entrepreneurship and innovation." />
+  <link rel="canonical" href="https://weiyu-nus.github.io/weiyu/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%238a7050'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Georgia,serif'%20font-size='36'%20font-style='italic'%20fill='%23ffffff'%20text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Wei Yu 俞薇 — Assistant Professor, NUS" />
+  <meta property="og:description" content="Studying the psychological and behavioral factors underlying entrepreneurship and innovation — how adversity both constrains and catalyzes." />
+  <meta property="og:url" content="https://weiyu-nus.github.io/weiyu/" />
+  <meta property="og:image" content="https://weiyu-nus.github.io/weiyu/profile-photo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Wei Yu 俞薇 — Assistant Professor, NUS" />
+  <meta name="twitter:description" content="Studying the psychological and behavioral factors underlying entrepreneurship and innovation — how adversity both constrains and catalyzes." />
+  <meta name="twitter:image" content="https://weiyu-nus.github.io/weiyu/profile-photo.jpg" />
+  <script>document.documentElement.className += ' js';</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { background: #fff; color: #1a1a1a; overflow-x: hidden; -webkit-font-smoothing: antialiased; font-family: 'Source Sans 3', sans-serif; }
-    ::selection { background: rgba(138,112,80,0.15); color: #1a1a1a; }
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: #fdfcfa; }
-    ::-webkit-scrollbar-thumb { background: rgba(138,112,80,0.2); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: rgba(138,112,80,0.35); }
-    a { transition: color 0.3s ease; }
-    .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.65s cubic-bezier(.22,1,.36,1), transform 0.65s cubic-bezier(.22,1,.36,1); }
-    .fade-in.visible { opacity: 1; transform: translateY(0); }
-    .nav-link { color: #666; text-decoration: none; font-size: 12.5px; font-family: 'Source Sans 3', sans-serif; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; transition: color 0.3s ease; cursor: pointer; border-bottom: 2px solid transparent; padding-bottom: 3px; }
-    .nav-link:hover, .nav-link.active { color: #8a7050; border-bottom-color: #8a7050; }
-    .stream-btn { padding: 9px 20px; border-radius: 6px; border: 1.5px solid #ddd; background: #fff; color: #888; font-family: 'Source Sans 3', sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
-    .stream-btn:hover { border-color: #b0a090; color: #666; }
-    .stream-btn.active { border-color: #8a7050; background: rgba(138,112,80,0.05); color: #8a7050; }
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { border-color: #d0c4b0 !important; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
-    .course-card:hover { border-color: #8a7050 !important; box-shadow: 0 4px 16px rgba(0,0,0,0.04); }
-    .btn-outline { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 6px; background: transparent; color: #1a1a1a; text-decoration: none; font-family: 'Source Sans 3', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; border: 1.5px solid #ccc; transition: all 0.3s ease; }
-    .btn-outline:hover { border-color: #8a7050; color: #8a7050; }
-    .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border-radius: 6px; background: #1a1a1a; color: #fff; text-decoration: none; font-family: 'Source Sans 3', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.3px; transition: background 0.3s ease; }
-    .btn-primary:hover { background: #333; }
-    @media (max-width: 768px) {
-      .hero-layout { flex-direction: column !important; }
-      .hero-left { flex: 1 1 100% !important; }
-      .stats-card { flex: 1 1 100% !important; }
-      .photo-name-row { flex-direction: column !important; text-align: center; }
-      .photo-name-row .photo { margin: 0 auto; }
-      .buttons-row { justify-content: center; }
-      .editorial-box { max-width: 100% !important; }
-      .nav-links { display: none !important; }
-      .grid-2 { grid-template-columns: 1fr !important; }
+    :root{
+      --bg:#ffffff; --bg-alt:#fdfcfa; --ink:#1a1a1a; --ink-2:#444444;
+      --muted:#7e6c55; --muted-2:#7c7164; --accent:#8a7050; --accent-dk:#6f5938;
+      --accent-soft:#f4efe7; --line:#ece8e2; --line-2:#e3ddd4;
+      --c-terra:#b27a5c; --c-teal:#356661; --c-sage:#8a9a72; --c-rose:#c2897f; --c-gold:#bf8c43;
+      --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+      --display:"Playfair Display",Georgia,serif;
+      --sans:"Source Sans 3",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      --mono:"DM Mono",ui-monospace,"SF Mono",monospace;
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;}
+    a{color:var(--accent); text-decoration:none;} a:hover{color:var(--accent-dk);}
+    h1,h2,h3{font-family:var(--display); font-weight:400; color:var(--ink); margin:0;}
+    em{font-style:italic;}
+    ::selection{background:#efe7d9;}
+
+    /* top nav */
+    header{position:sticky; top:0; z-index:60; background:rgba(255,255,255,.93); backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line);}
+    .nav{max-width:1180px; margin:0 auto; padding:14px 28px; display:flex; align-items:center; justify-content:space-between;}
+    .brand{font-family:var(--display); font-size:20px; font-weight:600; cursor:pointer; background:none; border:0; color:var(--ink);}
+    .brand .cn{color:var(--accent); font-weight:500; margin-left:5px; font-size:17px;}
+    .menu{display:flex; gap:22px; align-items:center;}
+    .menu a{font-family:var(--sans); font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-2); position:relative; padding:4px 0; cursor:pointer;}
+    .menu a:hover{color:var(--ink);}
+    .menu a.active{color:var(--ink);}
+    .menu a.active::after{content:""; position:absolute; left:0; right:0; bottom:-2px; height:1.5px; background:var(--accent);}
+    .menu-toggle{display:none; background:none; border:0; cursor:pointer; font-size:22px; color:var(--ink);}
+
+    /* artistic banner */
+    .banner{position:relative; width:100%; height:230px; overflow:hidden; background:linear-gradient(180deg,#fbf7f1,#fdfcfa);}
+    .banner svg{position:absolute; inset:0; width:100%; height:100%;}
+    .wave{animation:drift 14s ease-in-out infinite;}
+    .wave.w2{animation-duration:18s;} .wave.w3{animation-duration:22s;}
+    @keyframes drift{0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)}}
+    .spark{animation:tw 5s ease-in-out infinite;}
+    @keyframes tw{0%,100%{opacity:.25} 50%{opacity:.9}}
+    .banner-cap{position:absolute; left:0; bottom:14px; width:100%;}
+    .banner-cap .wrapcap{max-width:1180px; margin:0 auto; padding:0 28px;}
+    .banner-cap .k{font-family:var(--mono); font-size:10.5px; letter-spacing:.22em; text-transform:uppercase; color:#fff; background:rgba(53,102,97,.55); padding:5px 11px; border-radius:20px; backdrop-filter:blur(2px);}
+
+    /* layout: sidebar + content */
+    .layout{display:grid; grid-template-columns:262px 1fr; gap:50px; max-width:1180px; margin:0 auto; padding:34px 28px 80px;}
+    .sidebar{position:sticky; top:84px; align-self:start;}
+    .side-photo{width:148px; height:148px; border-radius:14px; object-fit:cover; border:1px solid var(--line-2); box-shadow:0 8px 24px #0000000f;}
+    .side-name{font-family:var(--display); font-size:27px; line-height:1.05; margin-top:18px;}
+    .side-name .cn{color:var(--accent); font-size:19px; margin-left:4px;}
+    .side-role{font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-top:8px;}
+    .side-affil{font-family:var(--serif); font-size:13.5px; color:var(--ink-2); margin-top:12px; line-height:1.5;}
+    .side-links{margin-top:18px; padding-top:18px; border-top:1px solid var(--line); display:flex; flex-direction:column; gap:11px;}
+    .side-links a{display:flex; align-items:center; gap:10px; font-family:var(--sans); font-size:13.5px; color:var(--ink-2);}
+    .side-links a:hover{color:var(--accent-dk);}
+    .side-links .ic{width:16px; text-align:center; color:var(--accent); font-size:13px;}
+    .side-note{margin-top:18px; padding:12px 14px; background:var(--accent-soft); border-radius:9px;}
+    .side-note .pill{font-family:var(--mono); font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-dk); border:1px solid var(--accent); border-radius:4px; padding:2px 7px;}
+    .side-note .nt{font-family:var(--serif); font-size:13px; color:var(--ink); margin-top:7px; line-height:1.4;}
+    .side-note .nt b{font-weight:600;}
+
+    /* content + views */
+    .content{min-width:0;}
+    .view{display:none;} .view.active{display:block; animation:fade .45s ease;}
+    @keyframes fade{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none}}
+    .eyebrow{font-family:var(--mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin:0 0 12px;}
+    h2.sec{font-size:36px; line-height:1.08; letter-spacing:-.01em; margin:0 0 8px;}
+    h3.sec3{font-family:var(--display); font-size:25px; margin:0 0 4px;}
+    .sec-sub{font-family:var(--serif); color:var(--ink-2); font-size:15px; max-width:680px; margin:6px 0 0;}
+    .block{margin-top:54px;}
+    .lede{font-family:var(--serif); font-size:18px; line-height:1.75; color:#3a3a3a; margin:14px 0 0;}
+    .lede em{color:var(--accent-dk);} .lede b{color:var(--ink); font-weight:600;}
+
+    /* about stat strip */
+    .statstrip{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+    .sx{flex:1; min-width:118px; border:1px solid var(--line); border-radius:11px; padding:13px 15px; background:var(--bg-alt);}
+    .sx .n{font-family:var(--display); font-size:25px; font-weight:700; color:var(--ink); line-height:1;}
+    .sx .n .u{font-size:15px;}
+    .sx .l{font-family:var(--sans); font-size:11px; color:var(--ink-2); margin-top:5px; line-height:1.3;}
+
+    /* network */
+    .net-head{margin-top:52px;}
+    .network{position:relative; width:100%; aspect-ratio:900/560; margin-top:18px;}
+    .net-edges{position:absolute; inset:0; width:100%; height:100%;}
+    .net-edges path{fill:none; stroke:var(--accent); stroke-width:1.4; opacity:.34; transition:opacity .25s, stroke-width .25s;}
+    .net-edges path.tri{stroke-dasharray:3 6; opacity:.2;}
+    .net-edges path.hot{opacity:.85; stroke-width:2.4; stroke-dasharray:none;}
+    .network.dim .net-edges path:not(.hot){opacity:.07;}
+    .net-node{position:absolute; transform:translate(-50%,-50%); cursor:pointer; transition:transform .2s, box-shadow .2s, opacity .25s; font:inherit; text-align:left;}
+    .net-node:hover{transform:translate(-50%,-50%) translateY(-3px);}
+    .network.dim .net-node:not(.hot):not(.neighbor){opacity:.32;}
+    .net-core{width:clamp(220px,30vw,292px); background:linear-gradient(180deg,#fff,var(--accent-soft)); border:1.5px solid var(--accent); border-radius:16px; padding:16px 20px; text-align:center; box-shadow:0 12px 32px #8a705022; cursor:default;}
+    .net-core .k{font-family:var(--mono); font-size:9.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin-bottom:7px;}
+    .net-core .ln{font-family:var(--serif); font-style:italic; font-size:15px; line-height:1.45; color:var(--ink);}
+    .net-pillar{width:clamp(176px,23vw,232px); background:#fff; border:1px solid var(--line-2); border-radius:13px; padding:14px 16px; box-shadow:0 5px 16px #0000000c; transition:border-color .2s, box-shadow .2s;}
+    .net-node:hover .net-pillar, .net-node.hot .net-pillar{border-color:var(--c); box-shadow:0 12px 28px #00000016;}
+    .net-pillar .pt{display:flex; align-items:center; gap:8px;}
+    .net-pillar .pt .dot{width:11px; height:11px; border-radius:50%; background:var(--c); flex:none; box-shadow:0 0 0 4px color-mix(in srgb, var(--c) 18%, transparent);}
+    .net-pillar .pt .nm{font-family:var(--display); font-size:18px; color:var(--ink);}
+    .net-pillar .ps{font-family:var(--serif); font-size:12.5px; line-height:1.45; color:var(--ink-2); margin-top:8px;}
+    @media(prefers-reduced-motion: reduce){ .wave,.spark{animation:none !important;} }
+    .net-cap{font-family:var(--mono); font-size:11.5px; color:var(--muted-2); margin-top:14px; min-height:18px; transition:.2s;}
+    .net-cap b{color:var(--accent-dk); font-weight:500;}
+    .net-cards{display:none; margin-top:16px; gap:10px; grid-template-columns:1fr;}
+    .net-cards button{display:flex; align-items:center; justify-content:space-between; gap:12px; border:1px solid var(--line-2); border-radius:12px; padding:15px 17px; background:#fff; cursor:pointer; text-align:left; width:100%; font:inherit;}
+    .net-cards .nc-t{display:flex; align-items:center; gap:10px; font-family:var(--display); font-size:17px; color:var(--ink);}
+    .net-cards .nc-d{width:10px; height:10px; border-radius:50%; background:var(--c); flex:none;}
+    .net-cards .nc-a{color:var(--accent); font-size:15px;}
+    @keyframes nodeIn{from{opacity:0; transform:translate(-50%,-50%) scale(.7)} to{opacity:1; transform:translate(-50%,-50%) scale(1)}}
+    .js .net-node{opacity:0;} .net-node.shown{animation:nodeIn .5s ease forwards;}
+
+    .overview-link{display:inline-flex; align-items:center; gap:7px; font-family:var(--mono); font-size:11px; color:var(--muted-2); margin-bottom:22px; background:none; border:0; cursor:pointer;}
+    .overview-link:hover{color:var(--accent-dk);}
+
+    /* framework */
+    .fw-diagram{display:grid; grid-template-columns:0.9fr auto 1.2fr; gap:22px; align-items:center; margin:26px 0 10px;}
+    .fw-core{border:1px solid var(--line-2); border-radius:14px; padding:22px; background:#fff; text-align:center;}
+    .fw-core .k{font-family:var(--mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin-bottom:8px;}
+    .fw-core h3{font-family:var(--display); font-size:24px; margin-bottom:14px;}
+    .edges{display:flex; gap:8px;}
+    .edge{flex:1; border-radius:8px; padding:9px 6px; font-family:var(--sans); font-size:12px; font-weight:600;}
+    .edge.bad{background:#faf0ee; color:#9e4634; border:1px solid #efd6cf;}
+    .edge.good{background:#eef6f0; color:#2e7d4f; border:1px solid #cfe7d8;}
+    .edge small{display:block; font-weight:400; font-size:10px; opacity:.8; margin-top:2px; font-family:var(--mono);}
+    .fw-connect{display:flex; flex-direction:column; gap:40px; align-items:center; color:var(--muted); font-size:18px;}
+    .fw-streams{display:flex; flex-direction:column; gap:12px;}
+    .stream{text-align:left; border:1px solid var(--line); border-radius:12px; padding:16px 18px; background:#fff; cursor:pointer; transition:.18s; width:100%; font:inherit;}
+    .stream:hover{border-color:var(--accent); box-shadow:0 8px 24px #0000000d; transform:translateY(-1px);}
+    .stream .top{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:7px;}
+    .stream .nm{font-family:var(--display); font-size:18px;}
+    .stream .lvl{font-family:var(--mono); font-size:9px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); background:var(--accent-soft); padding:3px 8px; border-radius:20px; white-space:nowrap;}
+    .stream .desc{font-family:var(--serif); font-size:13px; color:var(--ink-2); margin-bottom:9px;}
+    .chips{display:flex; flex-wrap:wrap; gap:6px;}
+    .chip{font-family:var(--sans); font-size:11px; color:var(--ink-2); background:#f6f3ee; border:1px solid var(--line); padding:3px 9px; border-radius:20px;}
+    .stream .go{font-family:var(--mono); font-size:10.5px; color:var(--accent); margin-top:10px; display:inline-flex; gap:6px;}
+    .fw-takeaways{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:26px;}
+    .ta{border-top:2px solid var(--accent); padding-top:11px;}
+    .ta b{font-family:var(--serif); font-size:13.5px; font-weight:600; display:block; margin-bottom:3px;}
+    .ta span{font-family:var(--serif); font-size:12.5px; color:var(--ink-2);}
+    /* double-edged findings (dual-pathway cards) */
+    .find-intro{font-family:var(--mono); font-size:10.5px; letter-spacing:.03em; color:var(--muted-2); margin-top:14px; display:flex; gap:18px; flex-wrap:wrap;}
+    .find-intro .lc{color:#2e7d4f;} .find-intro .ln{color:#9e4634;}
+    .dual-list{margin-top:22px; display:flex; flex-direction:column; gap:15px;}
+    .dual{border:1px solid var(--line); border-radius:13px; overflow:hidden; background:#fff; box-shadow:0 4px 14px #0000000a;}
+    .dual-hd{display:flex; align-items:baseline; justify-content:space-between; gap:10px; padding:13px 18px;}
+    .dual-hd .dt{font-family:var(--display); font-size:17px; color:var(--ink);}
+    .dual-hd .dr{font-family:var(--mono); font-size:9.5px; color:var(--muted); letter-spacing:.02em; white-space:nowrap;}
+    .dual-body{display:grid; grid-template-columns:1fr 1fr; border-top:1px solid var(--line);}
+    .dp{padding:13px 18px;}
+    .dp.cat{background:#f5faf6;}
+    .dp.con{background:#fdf4f1; border-left:1px solid var(--line);}
+    .dp .lab{font-family:var(--mono); font-size:9px; letter-spacing:.07em; text-transform:uppercase; margin-bottom:7px; font-weight:500;}
+    .dp.cat .lab{color:#2e7d4f;} .dp.con .lab{color:#9e4634;}
+    .dp .mech{font-family:var(--serif); font-size:12.5px; color:var(--ink-2); line-height:1.5;}
+    .dp .mech b{color:var(--ink); font-weight:600;}
+    .dual-net{padding:11px 18px; background:var(--bg-alt); border-top:1px solid var(--line); font-family:var(--serif); font-size:12.5px; color:var(--ink);}
+    .dual-net b{font-family:var(--mono); font-size:9px; letter-spacing:.07em; text-transform:uppercase; color:var(--accent); margin-right:9px;}
+    .dual-foot{padding:13px 18px 15px; background:var(--bg-alt); border-top:1px solid var(--line);}
+    .g-ends{display:flex; justify-content:space-between; font-family:var(--mono); font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:6px;}
+    .g-track{position:relative; height:8px; background:#e9e1d6; border-radius:20px;}
+    .g-tick{position:absolute; left:50%; top:-3px; bottom:-3px; width:1px; background:var(--line-2);}
+    .g-band{position:absolute; left:34%; right:34%; top:0; bottom:0; background:#cfe7d8; border-radius:20px;}
+    .g-mark{position:absolute; top:50%; width:14px; height:14px; border-radius:50%; transform:translate(-50%,-50%); border:2px solid #fff; box-shadow:0 1px 3px #0000002a;}
+    .g-mark.cat{background:#2e7d4f;} .g-mark.con{background:#9e4634;} .g-mark.bal{background:var(--muted-2);}
+    .g-verdict{font-family:var(--serif); font-size:12.5px; color:var(--ink-2); line-height:1.5; margin-top:10px;}
+    .g-lab{font-family:var(--mono); font-size:9px; letter-spacing:.06em; text-transform:uppercase; padding:2px 8px; border-radius:4px; margin-right:9px; white-space:nowrap;}
+    .g-lab.cat{color:#2e7d4f; background:#eef6f0;} .g-lab.con{color:#9e4634; background:#faf0ee;} .g-lab.bal{color:var(--accent-dk); background:var(--accent-soft);}
+
+    /* publications */
+    .pub-controls{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:22px 0 6px;}
+    .search-box{position:relative; flex:1; min-width:210px;}
+    .search-box input{width:100%; font-family:var(--sans); font-size:14px; padding:10px 14px 10px 34px; border:1px solid var(--line-2); border-radius:8px; background:#fff; color:var(--ink);}
+    .search-box input:focus{outline:none; border-color:var(--accent);}
+    .search-box .ic{position:absolute; left:12px; top:50%; transform:translateY(-50%); color:var(--muted);}
+    select.filter{font-family:var(--sans); font-size:13px; padding:9px 11px; border:1px solid var(--line-2); border-radius:8px; background:#fff; color:var(--ink-2); cursor:pointer;}
+    select.filter:focus{outline:none; border-color:var(--accent);}
+    .clear-btn{font-family:var(--mono); font-size:11px; color:var(--muted-2); background:none; border:0; cursor:pointer;}
+    .clear-btn:hover{color:var(--accent-dk);}
+    .theme-tabs{display:flex; flex-wrap:wrap; gap:8px; margin:13px 0 4px;}
+    .tab{font-family:var(--sans); font-size:12px; font-weight:500; padding:7px 13px; border-radius:20px; border:1px solid var(--line-2); background:#fff; color:var(--ink-2); cursor:pointer; transition:.16s;}
+    .tab:hover{border-color:var(--accent);} .tab.active{background:var(--ink); color:#fff; border-color:var(--ink);}
+    .count-line{font-family:var(--mono); font-size:11px; color:var(--muted-2); margin:13px 0 2px;}
+    .legend-toggle{font-family:var(--mono); font-size:11px; color:var(--accent); background:none; border:0; cursor:pointer; margin-left:8px;}
+    .legend{display:none; flex-wrap:wrap; gap:12px 20px; padding:13px 15px; background:var(--bg-alt); border:1px solid var(--line); border-radius:10px; margin:10px 0;}
+    .legend.open{display:flex;}
+    .legend div{font-family:var(--serif); font-size:12.5px; color:var(--ink-2);}
+    .legend b{font-family:var(--mono); font-size:10px; color:var(--ink); margin-right:6px;}
+    .pub{display:grid; grid-template-columns:54px 1fr; gap:16px; padding:20px 0; border-bottom:1px solid var(--line);}
+    .pub-year{font-family:var(--mono); font-size:12.5px; color:var(--muted); padding-top:2px;}
+    .pub-title{font-family:var(--serif); font-size:17px; font-weight:600; line-height:1.35; color:var(--ink);}
+    .pub-title:hover{color:var(--accent-dk);}
+    .pub-title .ext{font-family:var(--sans); font-size:11.5px; color:var(--muted); margin-left:6px; opacity:0; transition:.15s;}
+    .pub:hover .pub-title .ext{opacity:1;}
+    .pub-authors{font-family:var(--sans); font-size:13px; color:var(--ink-2); margin-top:6px;}
+    .pub-venue{font-family:var(--serif); font-size:13px; color:var(--muted-2); margin-top:2px;}
+    .pub-venue em{color:var(--ink-2);}
+    .pub-badges{display:flex; flex-wrap:wrap; gap:6px; margin-top:9px;}
+    .badge{font-family:var(--mono); font-size:9.5px; padding:2px 8px; border-radius:4px; border:1px solid;}
+    .b-sjr{background:#f0f4f8; color:#4a6785; border-color:#d0dce8;} .b-utd{background:#fef9ec; color:#92710a; border-color:#f0dfa0;}
+    .b-ft50{background:#fdf4ec; color:#9e5e1a; border-color:#f0cfaa;} .b-abs{background:#ecf7f0; color:#1a7a3a; border-color:#bfe3cd;}
+    .b-abdc{background:#f8ecf6; color:#8a2a7a; border-color:#e0b0d8;}
+    .b-sel{background:var(--accent); color:#fff; border-color:var(--accent);}
+    /* tools & open science */
+    .tools-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:18px;}
+    .tool{display:block; border:1px solid var(--line); border-radius:12px; padding:18px 20px; background:#fff; transition:border-color .18s, box-shadow .18s, transform .18s;}
+    .tool:hover{border-color:var(--accent); box-shadow:0 8px 24px #0000000d; transform:translateY(-2px);}
+    .tool .tk{font-family:var(--mono); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:9px;}
+    .tool .tnm{font-family:var(--display); font-size:18px; color:var(--ink); line-height:1.25;}
+    .tool .td{font-family:var(--serif); font-size:13px; color:var(--ink-2); margin-top:8px; line-height:1.55;}
+    .tool .td b{color:var(--ink); font-weight:600;}
+    .tool .ttags{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;}
+    .tool .ttag{font-family:var(--sans); font-size:11px; color:var(--ink-2); background:#f6f3ee; border:1px solid var(--line); padding:3px 9px; border-radius:20px;}
+    .tool .tgo{font-family:var(--mono); font-size:10.5px; color:var(--accent); margin-top:12px; display:inline-flex; gap:6px;}
+    .sum-toggle{font-family:var(--mono); font-size:11px; color:var(--accent); background:none; border:0; cursor:pointer; padding:4px 0; margin-top:9px; display:inline-flex; gap:5px;}
+    .sum-toggle .ar{transition:.2s;} .sum-toggle.open .ar{transform:rotate(90deg);}
+    .pub-summary{max-height:0; overflow:hidden; transition:max-height .3s ease;}
+    .pub-summary p{font-family:var(--serif); font-size:13.5px; line-height:1.6; color:var(--ink-2); margin:8px 0 0; padding:11px 13px; background:var(--bg-alt); border-left:2px solid var(--accent); border-radius:0 6px 6px 0;}
+    .no-results{font-family:var(--serif); color:var(--muted-2); padding:26px 0; font-style:italic;}
+    .pipe{display:grid; grid-template-columns:1fr auto; gap:14px; padding:16px 0; border-bottom:1px solid var(--line);}
+    .pipe .t{font-family:var(--serif); font-size:15.5px; font-weight:600; line-height:1.4;}
+    .pipe .a{font-family:var(--sans); font-size:12.5px; color:var(--ink-2); margin-top:4px;}
+    .pipe .st{font-family:var(--mono); font-size:10px; color:var(--accent-dk); background:var(--accent-soft); padding:5px 10px; border-radius:20px; white-space:nowrap; height:fit-content;}
+
+    /* grants */
+    .grant-total{display:flex; align-items:baseline; gap:12px; margin:22px 0 4px; flex-wrap:wrap;}
+    .grant-total .big{font-family:var(--display); font-size:36px; font-weight:700; color:var(--ink);}
+    .grant-total .lab{font-family:var(--serif); color:var(--ink-2); font-size:14px;}
+    .grant-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:16px;}
+    .grant{border:1px solid var(--line); border-radius:12px; padding:18px 20px; background:#fff;}
+    .grant .gtop{display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:9px;}
+    .grant .role{font-family:var(--mono); font-size:9px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent-dk); background:var(--accent-soft); padding:3px 9px; border-radius:20px;}
+    .grant .amt{font-family:var(--display); font-size:20px; font-weight:600;}
+    .grant .gt{font-family:var(--serif); font-size:14.5px; font-weight:600; line-height:1.4;}
+    .grant .gf{font-family:var(--sans); font-size:12px; color:var(--ink-2); margin-top:6px;}
+    .grant .gp{font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-top:7px;}
+
+    /* conferences */
+    .conf-toggle{font-family:var(--sans); font-size:13px; font-weight:600; color:var(--ink); background:#fff; border:1px solid var(--line-2); border-radius:8px; padding:10px 16px; cursor:pointer; margin-top:14px; display:inline-flex; align-items:center; gap:9px;}
+    .conf-toggle:hover{border-color:var(--accent); color:var(--accent-dk);}
+    .conf-toggle .ar{transition:.2s;} .conf-toggle.open .ar{transform:rotate(90deg);}
+    .conf-body{max-height:0; overflow:hidden; transition:max-height .45s ease;}
+    .conf-inner{padding-top:18px;}
+    .conf-group{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:16px 0 4px; padding-bottom:6px; border-bottom:1px solid var(--line-2);}
+    .conf-row{display:grid; grid-template-columns:48px 1fr; gap:12px; padding:7px 0; border-bottom:1px solid var(--line);}
+    .conf-row .cy{font-family:var(--mono); font-size:11.5px; color:var(--muted);}
+    .conf-row .ct{font-family:var(--serif); font-size:13px; color:var(--ink); line-height:1.4;}
+    .conf-row .ct .cm{color:var(--muted-2); font-size:11.5px;}
+
+    /* recognition */
+    .rec-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:26px;}
+    .rec-head{font-family:var(--mono); font-size:11px; letter-spacing:.13em; text-transform:uppercase; color:var(--accent); padding-bottom:9px; border-bottom:1px solid var(--line-2); margin-bottom:2px;}
+    .muted-note{color:var(--muted); letter-spacing:.04em; text-transform:none; font-size:10px; margin-left:6px;}
+    .rec-row{display:grid; grid-template-columns:64px 1fr; gap:12px; padding:10px 0; border-bottom:1px solid var(--line);}
+    .rec-row:last-child{border-bottom:0;}
+    .ry{font-family:var(--mono); font-size:11.5px; color:var(--muted); white-space:nowrap;}
+    .rt{font-family:var(--serif); font-size:13.5px; color:var(--ink); line-height:1.45;}
+    .rs{display:block; font-family:var(--sans); font-size:11.5px; color:var(--muted-2); margin-top:1px;}
+    .star{color:var(--accent);}
+    .cards{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:18px;}
+    .mcard{border:1px solid var(--line); border-radius:12px; padding:17px; background:#fff; transition:.18s; display:block;}
+    .mcard:hover{border-color:var(--accent); box-shadow:0 8px 24px #0000000d; transform:translateY(-2px);}
+    .mcard .src{font-family:var(--mono); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:9px;}
+    .mcard .hl{font-family:var(--serif); font-size:14px; font-weight:600; line-height:1.35;}
+    .mcard .rd{font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-top:11px;}
+
+    /* teaching */
+    .tcards{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:24px;}
+    .tcard{border:1px solid var(--line); border-radius:12px; padding:18px; background:#fff; position:relative;}
+    .tcard.new{border-color:var(--accent); box-shadow:0 8px 22px #8a705015;}
+    .tcard .nm{font-family:var(--display); font-size:17px; line-height:1.2;}
+    .tcard .code{font-family:var(--mono); font-size:9.5px; color:var(--accent); letter-spacing:.04em; margin-top:6px;}
+    .tcard .cd{font-family:var(--serif); font-size:12.5px; color:var(--ink-2); margin-top:8px; line-height:1.5;}
+    .tcard .tag{position:absolute; top:-9px; left:16px; font-family:var(--mono); font-size:8.5px; letter-spacing:.08em; background:var(--accent); color:#fff; padding:3px 8px; border-radius:4px;}
+    .philos{font-family:var(--serif); font-size:15px; line-height:1.75; color:#3a3a3a; margin-top:14px;}
+    .philos b{color:var(--ink); font-weight:600;}
+    .quote{font-family:var(--serif); font-style:italic; font-size:14.5px; color:var(--ink-2); border-left:2px solid var(--accent); padding:4px 0 4px 16px; margin:16px 0;}
+    .evalwrap{margin-top:22px; overflow-x:auto;}
+    table.evals{border-collapse:collapse; width:100%; font-family:var(--sans); font-size:12.5px;}
+    table.evals th{text-align:left; font-family:var(--mono); font-size:10px; letter-spacing:.06em; text-transform:uppercase; color:var(--muted-2); padding:9px 11px; border-bottom:1.5px solid var(--line-2);}
+    table.evals td{padding:9px 11px; border-bottom:1px solid var(--line); color:var(--ink-2);}
+    table.evals td.c{font-family:var(--display); font-weight:600; color:var(--ink);}
+    .up{color:#2e7d4f; font-size:10.5px;}
+    .note{margin-top:20px; font-family:var(--serif); font-size:13.5px; color:var(--ink-2); padding:15px 17px; background:var(--bg-alt); border:1px solid var(--line); border-radius:10px;}
+    .note b{color:var(--ink);}
+    .scard{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; border:1px solid var(--line); border-radius:12px; padding:16px 20px; background:#fff; margin-bottom:11px;}
+    .scard .nm{font-family:var(--display); font-size:19px;}
+    .scard .meta{font-family:var(--sans); font-size:12px; color:var(--muted-2); margin-top:3px;}
+    .scard .place{font-family:var(--serif); font-size:12.5px; color:var(--ink-2); text-align:right;}
+    .stag{font-family:var(--mono); font-size:9px; letter-spacing:.08em; text-transform:uppercase; padding:4px 10px; border-radius:20px;}
+    .stag.cur{background:var(--accent-soft); color:var(--accent-dk);} .stag.grad{background:#eef6f0; color:#2e7d4f;}
+    .committee{margin-top:20px;} .committee p{font-family:var(--serif); font-size:13.5px; color:var(--ink-2); line-height:1.7;}
+
+    /* service / contact */
+    .two{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:26px;}
+    .panel{border:1px solid var(--line); border-radius:12px; padding:20px 22px; background:#fff;}
+    .panel .eyebrow{margin-bottom:13px;}
+    .tagrow{display:flex; flex-wrap:wrap; gap:8px;}
+    .tagrow span{font-family:var(--sans); font-size:12px; color:var(--ink-2); background:#f6f3ee; border:1px solid var(--line); padding:5px 11px; border-radius:6px;}
+    .panel ul{list-style:none; margin:0; padding:0;}
+    .panel li{font-family:var(--serif); font-size:13.5px; color:var(--ink-2); padding:5px 0;}
+    .three{display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:26px;}
+    .three .eyebrow{margin-bottom:9px;}
+    .three p{font-family:var(--serif); font-size:13.5px; color:var(--ink-2); line-height:1.6; margin:0;}
+    .three a{display:block; margin:3px 0;}
+
+    footer{border-top:1px solid var(--line); padding:24px 0; margin-top:20px;}
+    .foot{max-width:1180px; margin:0 auto; padding:0 28px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+    .foot p{font-family:var(--mono); font-size:10.5px; color:var(--muted-2); margin:0;}
+
+    .js .reveal{opacity:0; transform:translateY(14px); transition:opacity .6s, transform .6s;}
+    .js .reveal.in{opacity:1; transform:none;}
+
+    @media(max-width:980px){
+      .layout{grid-template-columns:1fr; gap:0;}
+      .sidebar{position:static; display:grid; grid-template-columns:148px 1fr; gap:20px; align-items:center; padding-bottom:26px; margin-bottom:26px; border-bottom:1px solid var(--line);}
+      .side-links{margin-top:14px; padding-top:14px; grid-column:1/-1; flex-direction:row; flex-wrap:wrap; gap:14px;}
+      .side-note{grid-column:1/-1;}
+      .fw-diagram{grid-template-columns:1fr;} .fw-connect{display:none;} .fw-takeaways{grid-template-columns:1fr; gap:6px;}
+      .rec-grid,.grant-grid,.two,.three,.cards,.tcards,.tools-grid{grid-template-columns:1fr;}
+    }
+    @media(max-width:760px){
+      .network,.net-cap{display:none;}
+      .net-cards{display:grid;}
+      .dual-body{grid-template-columns:1fr;}
+      .dp.con{border-left:0; border-top:1px solid var(--line);}
+    }
+    @media(max-width:680px){
+      .menu{display:none; position:absolute; top:100%; left:0; right:0; flex-direction:column; gap:0; background:#fff; border-bottom:1px solid var(--line); padding:8px 28px 16px;}
+      .menu.open{display:flex;} .menu a{padding:11px 0; border-bottom:1px solid var(--line);}
+      .menu-toggle{display:block;} h2.sec{font-size:28px;} .banner{height:150px;}
     }
   </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.8);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:all 0.35s ease;padding:0 40px;">
-  <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:60px;">
-    <a href="#about" style="text-decoration:none;">
-      <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#1a1a1a;letter-spacing:0.5px;">Wei Yu</span>
-      <span style="font-family:'Playfair Display',serif;font-size:16px;font-weight:400;color:#8a7050;margin-left:8px;">俞薇</span>
-    </a>
-    <div class="nav-links" style="display:flex;gap:28px;align-items:center;">
-      <a href="#about" class="nav-link active" data-section="about">About</a>
-      <a href="#research" class="nav-link" data-section="research">Research</a>
-      <a href="#teaching" class="nav-link" data-section="teaching">Teaching</a>
-      <a href="#students" class="nav-link" data-section="students">Students</a>
-      <a href="#service" class="nav-link" data-section="service">Service</a>
-      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+  <header>
+    <div class="nav">
+      <button class="brand" data-view="home">Wei Yu<span class="cn">俞薇</span></button>
+      <button class="menu-toggle" aria-label="Menu" id="menuToggle">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#/home" data-view="home" data-nav="home" class="active">About</a>
+        <a href="#/research" data-view="research" data-nav="research">Research</a>
+        <a href="#/teaching" data-view="teaching" data-nav="teaching">Teaching</a>
+        <a href="#/recognition" data-view="recognition" data-nav="recognition">Recognition</a>
+        <a href="#/service" data-view="service" data-nav="service">Service</a>
+        <a href="#/contact" data-view="contact" data-nav="contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</nav>
+  </header>
 
-<!-- HERO / ABOUT -->
-<section id="about" style="min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(160deg,#fdfcfa 0%,#f8f6f2 40%,#f4f1ec 100%);">
-  <div style="position:absolute;inset:0;opacity:0.025;background-image:repeating-linear-gradient(0deg,transparent,transparent 80px,#8a7050 80px,#8a7050 81px),repeating-linear-gradient(90deg,transparent,transparent 80px,#8a7050 80px,#8a7050 81px);"></div>
-  <div style="max-width:1100px;margin:0 auto;padding:120px 40px 80px;position:relative;z-index:1;width:100%;">
-    <div class="hero-layout" style="display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap;">
-      <!-- Left -->
-      <div class="hero-left" style="flex:1 1 580px;">
-        <!-- Photo + Name -->
-        <div class="photo-name-row fade-in" style="display:flex;gap:28px;align-items:center;margin-bottom:28px;">
-          <div class="photo" style="width:120px;height:120px;border-radius:50%;overflow:hidden;border:3px solid #e8e0d4;flex-shrink:0;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
-            <img src="profile-photo.jpg" alt="Wei Yu" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#e8e0d4,#d4c8b8)';this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:Playfair Display,serif;font-size:36px;color:#8a7050;font-weight:600&quot;>WY</div>';" />
+  <!-- artistic banner -->
+  <div class="banner" aria-hidden="true">
+    <svg viewBox="0 0 1440 230" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="gA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7efe4"/><stop offset="1" stop-color="#fdfcfa"/></linearGradient>
+      </defs>
+      <rect width="1440" height="230" fill="url(#gA)"/>
+      <g class="wave w3" opacity="0.5"><path fill="#8a9a72" d="M0,150 C260,96 520,182 760,150 C1000,118 1220,176 1440,140 L1440,230 L0,230 Z"/></g>
+      <g class="wave w2" opacity="0.45"><path fill="#356661" d="M0,182 C300,140 540,206 800,176 C1040,150 1240,196 1440,178 L1440,230 L0,230 Z"/></g>
+      <g class="wave" opacity="0.5"><path fill="#b27a5c" d="M0,206 C340,182 600,224 880,202 C1120,184 1280,214 1440,202 L1440,230 L0,230 Z"/></g>
+      <g class="wave w2" opacity="0.28"><path fill="#c2897f" d="M0,214 C380,198 700,232 980,214 C1180,202 1320,222 1440,216 L1440,230 L0,230 Z"/></g>
+      <!-- constellation hint -->
+      <g stroke="#8a7050" stroke-width="1" opacity="0.45">
+        <line x1="230" y1="70" x2="430" y2="104"/><line x1="430" y1="104" x2="600" y2="62"/><line x1="600" y1="62" x2="820" y2="98"/><line x1="820" y1="98" x2="1010" y2="64"/><line x1="1010" y1="64" x2="1180" y2="100"/>
+      </g>
+      <g fill="#8a7050">
+        <circle class="spark" cx="230" cy="70" r="4"/><circle class="spark" cx="430" cy="104" r="5" style="animation-delay:.6s"/><circle class="spark" cx="600" cy="62" r="4" style="animation-delay:1.2s"/><circle class="spark" cx="820" cy="98" r="5" style="animation-delay:1.8s"/><circle class="spark" cx="1010" cy="64" r="4" style="animation-delay:2.4s"/><circle class="spark" cx="1180" cy="100" r="4.5" style="animation-delay:3s"/>
+      </g>
+    </svg>
+    <div class="banner-cap"><div class="wrapcap"><span class="k">Adversity · Entrepreneurship · Innovation</span></div></div>
+  </div>
+
+  <div class="layout">
+    <!-- persistent identity sidebar -->
+    <aside class="sidebar">
+      <img class="side-photo" src="profile-photo.jpg" onerror="this.onerror=null;this.src='https://weiyu-nus.github.io/weiyu/profile-photo.jpg';" alt="Wei Yu" />
+      <div class="side-name">Wei Yu<span class="cn">俞薇</span></div>
+      <div class="side-role">Assistant Professor</div>
+      <div class="side-affil">Industrial Systems Engineering &amp; Management<br/>College of Design and Engineering<br/>National University of Singapore</div>
+      <div class="side-links">
+        <a href="https://scholar.google.com/citations?user=wVvh7VAAAAAJ&hl=en&inst=3212728378801010220" target="_blank" rel="noopener"><span class="ic">◧</span> Google Scholar</a>
+        <a href="https://github.com/WeiYu-NUS" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true" style="vertical-align:-2px"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></span> GitHub</a>
+        <a href="Wei_Yu_CV_Jun_2026.pdf" target="_blank" rel="noopener"><span class="ic">↓</span> Curriculum Vitae</a>
+        <a href="mailto:iseyw@nus.edu.sg"><span class="ic">✉</span> iseyw@nus.edu.sg</a>
+        <a href="https://weiyu-nus.github.io/weiyu/" target="_blank" rel="noopener"><span class="ic">⌂</span> weiyu-nus.github.io</a>
+      </div>
+      <div class="side-note"><span class="pill">Invited</span><div class="nt"><b>Associate Editor</b>, Entrepreneurship Theory &amp; Practice · Summer 2026</div></div>
+    </aside>
+
+    <main class="content">
+      <!-- HOME / ABOUT -->
+      <section class="view active" id="home">
+        <div class="reveal">
+          <div class="eyebrow">About</div>
+          <h2 class="sec">Adversity as a double-edged sword</h2>
+          <p class="lede">I'm an Assistant Professor in Industrial Systems Engineering &amp; Management at the National University of Singapore, which I joined in 2018 after completing my PhD at Syracuse University. I study the psychological and behavioral factors underlying <em>entrepreneurship</em> and <em>innovation</em>. One idea runs through my work: <b>adversity</b> — a founder's childhood hardship, a psychological condition, or a firm's performance shortfall — can act as both a constraint and a catalyst. Across <b>16 publications</b> in leading journals — <em>Strategic Management Journal</em>, <em>Journal of Business Venturing</em>, <em>Journal of Management</em>, and <em>Entrepreneurship Theory and Practice</em> — my work asks <em>what</em>, <em>how</em>, and <em>when</em> each edge prevails; lately I've turned to how AI is reshaping entrepreneurs' work and well-being.</p>
+        </div>
+        <div class="statstrip reveal">
+          <div class="sx"><div class="n">16</div><div class="l">Publications · 10 in FT50</div></div>
+          <div class="sx"><div class="n">1,388</div><div class="l">Citations (Scholar · Jun 2026)</div></div>
+          <div class="sx"><div class="n">3.14<span class="u">×</span></div><div class="l">FWCI vs. world (Scopus)</div></div>
+          <div class="sx"><div class="n"><span class="u">S$</span>566<span class="u">K</span></div><div class="l">Funding as PI</div></div>
+          <div class="sx"><div class="n">3</div><div class="l">PhD students (sole chair)</div></div>
+        </div>
+
+        <div class="net-head reveal">
+          <div class="eyebrow">My philosophy</div>
+          <h3 class="sec3">One idea, connected work</h3>
+          <p class="sec-sub">A single conviction — that adversity is context-specific — drives my research, my teaching, and my service alike. Hover the centre to see how; click a branch to open it.</p>
+        </div>
+        <div class="network" id="network"><svg class="net-edges" id="netEdges" viewBox="0 0 900 560" preserveAspectRatio="none"></svg></div>
+        <div class="net-cap" id="netCap">Hover the centre or a branch to see how the work connects · click a branch to open it.</div>
+        <div class="net-cards" id="netCards"></div>
+      </section>
+
+      <!-- RESEARCH -->
+      <section class="view" id="research">
+        <button class="overview-link" data-view="home">← About</button>
+        <div class="reveal"><div class="eyebrow">Research</div><h2 class="sec">Research Framework</h2>
+          <p class="sec-sub">The same adversity — a psychological condition, a childhood hardship, or an organizational performance shortfall — can constrain or catalyze, depending on the mechanisms it activates. Click a stream to filter the publications.</p></div>
+        <div class="reveal" style="margin-top:8px;">
+          <div class="fw-diagram">
+            <div class="fw-core"><div class="k">The Core Idea</div><h3>Adversity</h3><div class="edges"><div class="edge bad">Constraint<small>impairs · depletes</small></div><div class="edge good">Catalyst<small>builds · drives</small></div></div></div>
+            <div class="fw-connect"><span>→</span><span>→</span></div>
+            <div class="fw-streams">
+              <button class="stream" data-theme="ent"><div class="top"><span class="nm">Adversity &amp; Entrepreneurship</span><span class="lvl">Individual</span></div><div class="desc">How adverse traits and circumstances shape entrepreneurial cognition, action, and outcomes.</div><div class="chips"><span class="chip">ADHD / neurodiversity</span><span class="chip">Childhood adversity</span><span class="chip">Resilience</span><span class="chip">Social strain</span></div><span class="go">View 14 publications →</span></button>
+              <button class="stream" data-theme="inn"><div class="top"><span class="nm">Adversity &amp; Innovation</span><span class="lvl">Organizational</span></div><div class="desc">How organizational adversity — performance shortfalls — drives innovative search.</div><div class="chips"><span class="chip">Underperformance duration</span><span class="chip">Feedback persistence</span></div><span class="go">View 2 publications →</span></button>
+            </div>
           </div>
-          <div>
-            <div style="font-size:12px;font-family:'Source Sans 3',sans-serif;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:8px;font-weight:600;">Assistant Professor</div>
-            <h1 style="font-family:'Playfair Display',serif;font-size:clamp(36px,4.5vw,52px);font-weight:400;color:#1a1a1a;line-height:1.15;margin:0;">Wei Yu</h1>
-            <div style="font-family:'Playfair Display',serif;font-size:clamp(22px,2.5vw,32px);font-weight:300;color:#8a7050;font-style:italic;margin-top:2px;">俞薇</div>
-            <div style="font-family:'Source Sans 3',sans-serif;font-size:13.5px;color:#888;margin-top:6px;letter-spacing:0.3px;">
-              Department of Industrial Systems Engineering & Management<br />
-              College of Design and Engineering, National University of Singapore
+          <div class="fw-takeaways">
+            <div class="ta"><b>Double-edged effects</b><span>The same adversity can enable or constrain, depending on mechanism and boundary conditions.</span></div>
+            <div class="ta"><b>Temporal dynamics</b><span>Duration and persistence of adversity critically shape its effects — at both levels.</span></div>
+            <div class="ta"><b>Expanding the scope</b><span>From financial hardship to psychological conditions, social strain, and even success itself.</span></div>
+          </div>
+        </div>
+
+        <div class="block reveal">
+          <div class="eyebrow">Synthesis</div>
+          <h2 class="sec">Key Findings</h2>
+          <p class="sec-sub">Each adversity cuts <b>both ways at once</b> — a catalyzing edge and a constraining edge. What my studies pin down is the mechanism on each side, and the condition that decides the net.</p>
+          <div class="find-intro"><span><b class="lc">▲ catalyzing edge</b></span><span><b class="ln">▼ constraining edge</b></span><span>· the bar marks where the net lands</span></div>
+          <div class="dual-list">
+            <div class="dual">
+              <div class="dual-hd"><span class="dt">ADHD &amp; neurodiversity</span><span class="dr">JBV 2017 · ETP 2021</span></div>
+              <div class="dual-body">
+                <div class="dp cat"><div class="lab">▲ Catalyzing edge</div><div class="mech"><b>Impulsivity &amp; low premeditation</b> → action orientation, entrepreneurial orientation, faster entry</div></div>
+                <div class="dp con"><div class="lab">▼ Constraining edge</div><div class="mech"><b>Inattention &amp; urgency</b> → execution and follow-through costs</div></div>
+              </div>
+              <div class="dual-foot">
+                <div class="g-ends"><span>constrains</span><span>catalyzes</span></div>
+                <div class="g-track"><span class="g-tick"></span><span class="g-mark cat" style="left:74%"></span></div>
+                <div class="g-verdict"><span class="g-lab cat">conditional asset</span>the entrepreneurial context rewards the action-oriented edge</div>
+              </div>
+            </div>
+            <div class="dual">
+              <div class="dual-hd"><span class="dt">Childhood adversity → entry</span><span class="dr">JBV 2023</span></div>
+              <div class="dual-body">
+                <div class="dp cat"><div class="lab">▲ Catalyzing edge</div><div class="mech"><b>Rule-breaking tendencies</b> → more favorable toward starting a venture</div></div>
+                <div class="dp con"><div class="lab">▼ Constraining edge</div><div class="mech"><b>Lower ability &amp; self-efficacy</b> → suppresses entry</div></div>
+              </div>
+              <div class="dual-foot">
+                <div class="g-ends"><span>constrains</span><span>catalyzes</span></div>
+                <div class="g-track"><span class="g-tick"></span><span class="g-mark bal" style="left:48%"></span></div>
+                <div class="g-verdict"><span class="g-lab bal">mixed blessing</span>more negative for women &amp; unincorporated founders</div>
+              </div>
+            </div>
+            <div class="dual">
+              <div class="dual-hd"><span class="dt">Childhood adversity → success</span><span class="dr">JBR 2022</span></div>
+              <div class="dual-body">
+                <div class="dp cat"><div class="lab">▲ Up to a point</div><div class="mech"><b>Builds resilience</b> → entrepreneurial career success</div></div>
+                <div class="dp con"><div class="lab">▼ In excess</div><div class="mech"><b>Overexposure depletes</b> resilience and erodes success</div></div>
+              </div>
+              <div class="dual-foot">
+                <div class="g-ends"><span>too little</span><span>moderate</span><span>too much</span></div>
+                <div class="g-track"><span class="g-band"></span><span class="g-mark cat" style="left:50%"></span></div>
+                <div class="g-verdict"><span class="g-lab cat">inverted-U</span>moderate adversity helps most</div>
+              </div>
+            </div>
+            <div class="dual">
+              <div class="dual-hd"><span class="dt">Organizational underperformance</span><span class="dr">SMJ 2019</span></div>
+              <div class="dual-body">
+                <div class="dp cat"><div class="lab">▲ Catalyzing edge</div><div class="mech"><b>Spurs problemistic / innovative search</b> → renewal</div></div>
+                <div class="dp con"><div class="lab">▼ Constraining edge</div><div class="mech"><b>Threatens survival</b> &amp; strains resources</div></div>
+              </div>
+              <div class="dual-foot">
+                <div class="g-ends"><span>constrains</span><span>catalyzes</span></div>
+                <div class="g-track"><span class="g-tick"></span><span class="g-mark cat" style="left:70%"></span></div>
+                <div class="g-verdict"><span class="g-lab cat">catalyzes search</span>the longer the shortfall persists, the stronger the search</div>
+              </div>
+            </div>
+            <div class="dual">
+              <div class="dual-hd"><span class="dt">Firm growth → workforce satisfaction</span><span class="dr">SMJ 2025</span></div>
+              <div class="dual-body">
+                <div class="dp cat"><div class="lab">▲ Up to a point</div><div class="mech"><b>Early growth lifts</b> the startup workforce's job satisfaction</div></div>
+                <div class="dp con"><div class="lab">▼ In excess</div><div class="mech"><b>Extreme growth</b> → managerial &amp; socio-structural strain erodes it</div></div>
+              </div>
+              <div class="dual-foot">
+                <div class="g-ends"><span>slow</span><span>moderate</span><span>extreme</span></div>
+                <div class="g-track"><span class="g-band"></span><span class="g-mark cat" style="left:48%"></span></div>
+                <div class="g-verdict"><span class="g-lab cat">inverted-U</span>extreme growth backfires (the Penrose effect)</div>
+              </div>
+            </div>
+            <div class="dual">
+              <div class="dual-hd"><span class="dt">Social undermining</span><span class="dr">JBV 2022</span></div>
+              <div class="dual-body">
+                <div class="dp cat"><div class="lab">▲ The buffer</div><div class="mech"><b>Trait resilience</b> cushions the spillover</div></div>
+                <div class="dp con"><div class="lab">▼ The harm</div><div class="mech"><b>Disrupted sleep</b> → next-day disengagement</div></div>
+              </div>
+              <div class="dual-foot">
+                <div class="g-ends"><span>constrains</span><span>catalyzes</span></div>
+                <div class="g-track"><span class="g-tick"></span><span class="g-mark con" style="left:26%"></span></div>
+                <div class="g-verdict"><span class="g-lab con">net harmful</span>but resilience decides who it reaches</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Description -->
-        <div class="fade-in" style="transition-delay:0.15s;">
-          <p style="font-family:'Source Serif 4',serif;font-size:17.5px;color:#444;line-height:1.75;max-width:560px;margin:0 0 28px;">
-            I study the psychological and behavioral factors underlying <em style="color:#8a7050;">entrepreneurship</em> and <em style="color:#8a7050;">innovation</em>, with a specific focus on how adversity shapes entrepreneurial decisions, venture outcomes, and innovative search in established firms.
-          </p>
+        <div class="block reveal"><h2 class="sec">Publications</h2><p class="sec-sub">All 16 are in SJR Q1 journals and the top 10% by CiteScore. <span style="color:var(--accent)">✻</span> denotes corresponding author. Titles link to the published article (DOI).</p></div>
+        <div class="pub-controls reveal">
+          <div class="search-box"><span class="ic">⌕</span><input id="pubSearch" type="text" placeholder="Search title, co-author, or journal…" /></div>
+          <select class="filter" id="fYear"><option value="">All years</option></select>
+          <select class="filter" id="fJournal"><option value="">All journals</option></select>
+          <select class="filter" id="fMethod"><option value="">All methods</option></select>
+          <button class="clear-btn" id="clearFilters">✕ clear</button>
+        </div>
+        <div class="theme-tabs reveal">
+          <button class="tab" data-theme="selected">★ Selected (5)</button>
+          <button class="tab active" data-theme="all">All published (16)</button>
+          <button class="tab" data-theme="ent">Adversity &amp; Entrepreneurship (14)</button>
+          <button class="tab" data-theme="inn">Adversity &amp; Innovation (2)</button>
+          <button class="tab" data-theme="pipe">Under Review &amp; Pipeline (6)</button>
+        </div>
+        <div class="count-line"><span id="countText">Showing 16 of 16</span><button class="legend-toggle" id="legendToggle">ⓘ badge key</button></div>
+        <div class="legend" id="legend"><div><b>SJR Q1</b>top-quartile</div><div><b>UTD24</b>UT Dallas Top-24</div><div><b>FT50</b>Financial Times Top-50</div><div><b>ABS 4*</b>Chartered ABS</div><div><b>ABDC A*</b>Australian BDC</div><div><b>✻</b>corresponding author</div></div>
+        <div class="pub-list" id="pubList"></div>
 
-          <!-- Buttons -->
-          <div class="buttons-row" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;">
-            <a href="https://scholar.google.com/citations?user=wVvh7VAAAAAJ&hl=en&inst=3212728378801010220" target="_blank" rel="noopener noreferrer" class="btn-primary">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-              Google Scholar
+        <div class="block reveal">
+          <div class="eyebrow">Tools &amp; Open Science</div><h2 class="sec">Open Research Tools</h2>
+          <p class="sec-sub">Free, open resources I've built for the research community.</p>
+          <div class="tools-grid">
+            <a class="tool" href="https://weiyu-nus.github.io/entrepreneurship-kb/" target="_blank" rel="noopener">
+              <div class="tk">Web app · open source</div>
+              <div class="tnm">Entrepreneurship Research Knowledge Base</div>
+              <div class="td">A searchable database of <b>3,511 papers</b> from ETP, JBV, and SEJ — AI-extracted research questions, findings, theories, methods, and variables, with full-text search, filtering, and analytics.</div>
+              <div class="ttags"><span class="ttag">3,511 papers</span><span class="ttag">AI-assisted pipeline</span><span class="ttag">MIT-licensed</span></div>
+              <div class="tgo">Open the database →</div>
             </a>
-            <a href="Wei_Yu_CV_Feb_2026.docx" download class="btn-outline">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download CV
+            <a class="tool" href="https://weiyu-nus.github.io/research-methods/" target="_blank" rel="noopener">
+              <div class="tk">Interactive web app</div>
+              <div class="tnm">Research Methods for Management Scholars</div>
+              <div class="td">An interactive, visual-first guide to quantitative methods — <b>24 modules</b> for PhD students in management, strategy, and entrepreneurship.</div>
+              <div class="ttags"><span class="ttag">24 modules</span><span class="ttag">Open access</span></div>
+              <div class="tgo">Open the app →</div>
             </a>
-            <a href="mailto:iseyw@nus.edu.sg" class="btn-outline">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              Email
-            </a>
           </div>
         </div>
 
-        <!-- Editorial Service -->
-        <div class="fade-in editorial-box" style="transition-delay:0.3s;padding:20px 22px;border-radius:8px;background:rgba(138,112,80,0.04);border:1px solid rgba(138,112,80,0.12);max-width:560px;">
-          <div style="font-family:'Source Sans 3',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;">Editorial Service</div>
-
-          <!-- Incoming AE role: given visual emphasis -->
-          <div style="padding:12px 14px;border-radius:6px;background:#fff;border:1px solid rgba(138,112,80,0.2);margin-bottom:12px;">
-            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;flex-wrap:wrap;">
-              <span style="display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-family:'DM Mono',monospace;font-weight:600;letter-spacing:0.5px;background:#8a7050;color:#fff;">INVITED</span>
-              <span style="font-family:'Source Serif 4',serif;font-size:15.5px;color:#1a1a1a;font-weight:600;">Associate Editor</span>
-            </div>
-            <div style="font-family:'Source Serif 4',serif;font-size:14.5px;color:#333;font-style:italic;">
-              Entrepreneurship Theory and Practice <span style="color:#999;font-size:12.5px;font-style:normal;">· Summer 2026</span>
-            </div>
-          </div>
-
-          <div style="font-family:'Source Sans 3',sans-serif;font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:8px;">Editorial Review Board</div>
-          <div style="font-family:'Source Serif 4',serif;font-size:15px;color:#333;line-height:1.8;">
-            <strong>Journal of Business Venturing</strong> <span style="color:#999;font-size:13px;">· 2020 – present</span><br />
-            <strong>Entrepreneurship Theory and Practice</strong> <span style="color:#999;font-size:13px;">· 2018 – present</span>
+        <div class="block reveal" id="grants">
+          <div class="eyebrow">Funding</div><h2 class="sec">Research Grants</h2>
+          <div class="grant-total"><span class="big">S$566K</span><span class="lab">secured as <b>Principal Investigator</b> across 4 competitive &amp; industry grants</span></div>
+          <div class="grant-grid">
+            <div class="grant"><div class="gtop"><span class="role">PI · MOE Tier 1</span><span class="amt">S$106K</span></div><div class="gt">A Research Agenda on AI Assistance and Entrepreneurs' Mental Health</div><div class="gf">Ministry of Education (MOE), Singapore</div><div class="gp">03/2025 – 03/2028</div></div>
+            <div class="grant"><div class="gtop"><span class="role">PI · Industry</span><span class="amt">S$56K</span></div><div class="gt">AI Assistance and New Venture Performance (in China)</div><div class="gf">Guangdong Loteam Creative Park</div><div class="gp">09/2024 – 09/2026</div></div>
+            <div class="grant"><div class="gtop"><span class="role">PI · Internal (RSB)</span><span class="amt">S$154K</span></div><div class="gt">Entrepreneurship and Innovation</div><div class="gf">National University of Singapore</div><div class="gp">08/2020 – 07/2023</div></div>
+            <div class="grant"><div class="gtop"><span class="role">PI · Startup Grant</span><span class="amt">S$250K</span></div><div class="gt">A Research Agenda on Entrepreneurship, Mental Health and Well-Being</div><div class="gf">National University of Singapore</div><div class="gp">09/2018 – 02/2024</div></div>
           </div>
         </div>
-      </div>
 
-      <!-- Stats Card -->
-      <div class="stats-card fade-in" style="flex:0 0 330px;transition-delay:0.35s;">
-        <div style="padding:32px 28px;border-radius:12px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.04),0 8px 30px rgba(0,0,0,0.06);border:1px solid #eee;">
-          <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:24px;">
-            Research Summary <span style="font-weight:400;color:#aaa;">· Feb 2026</span>
+        <div class="block reveal">
+          <div class="eyebrow">Dissemination</div><h2 class="sec">Conference Presentations</h2>
+          <p class="sec-sub">Refereed presentations at the field's flagship conferences. <span style="color:var(--accent)">▸</span> presented by me.</p>
+          <button class="conf-toggle" id="confToggle"><span class="ar">▸</span> Show all 28 presentations</button>
+          <div class="conf-body" id="confBody"><div class="conf-inner">
+            <div class="conf-group">Academy of Management (AOM)</div>
+            <div class="conf-row"><span class="cy">2025</span><span class="ct">The Dual Faces of Female Agency: A Replication and Extension Study <span class="cm">· Bao &amp; Yu ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2023</span><span class="ct">The Strain-based Model of Overperformance and Corporate Financial Misconduct <span class="cm">· Yu &amp; Ge</span></span></div>
+            <div class="conf-row"><span class="cy">2022</span><span class="ct">CEO Succession Type, Agency Risk, and Firm Innovation <span class="cm">· Fei &amp; Yu</span></span></div>
+            <div class="conf-row"><span class="cy">2022</span><span class="ct">Entrepreneurial Team Conflict: ADHD, Gender, Well-Being, and Firm Performance <span class="cm">· Tran, Wiklund &amp; Yu</span></span></div>
+            <div class="conf-row"><span class="cy">2022</span><span class="ct">Hacking Through the Theoretical Thicket of R&amp;D Research <span class="cm">· Mazzelli, Yu, Fei &amp; Patel</span></span></div>
+            <div class="conf-row"><span class="cy">2021</span><span class="ct">Environmental Hostility vs. Dynamism: Organizational Resilience <span class="cm">· Yu &amp; Ye ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2021</span><span class="ct">Psychological Vulnerabilities, Gender, and Venturing Stage on Wellbeing <span class="cm">· Tran, Wiklund, Yu &amp; Pérez-Luño</span></span></div>
+            <div class="conf-row"><span class="cy">2021</span><span class="ct">Intellectual Property Rights &amp; New Venture Performance <span class="cm">· Seyed Abootorabi &amp; Yu</span></span></div>
+            <div class="conf-row"><span class="cy">2020</span><span class="ct">China's Bayh-Dole Act and University Patenting <span class="cm">· Ge, Yu, Shi &amp; Dang</span></span></div>
+            <div class="conf-row"><span class="cy">2018</span><span class="ct">ADHD Symptoms, Entrepreneurial Orientation, and Firm Performance <span class="cm">· Yu, Wiklund &amp; Pérez-Luño ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2016</span><span class="ct">ADHD, Impulsivity, and Entrepreneurship <span class="cm">· Wiklund, Yu, Tucker &amp; Marino ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2016</span><span class="ct">Impulsivity and Entrepreneurial Action <span class="cm">· Wiklund, Yu &amp; Patzelt ▸</span></span></div>
+            <div class="conf-group">Babson (BCERC) — Frontiers of Entrepreneurship Research</div>
+            <div class="conf-row"><span class="cy">2023</span><span class="ct">ADHD and Entrepreneurial Entry: Privilege of Smart Men? <span class="cm">· Yu &amp; Tran ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2023</span><span class="ct">Successful Female Entrepreneurs: Are They Conferred Advantages? <span class="cm">· Bao &amp; Yu</span></span></div>
+            <div class="conf-row"><span class="cy">2022</span><span class="ct">ADHD, Gender and Entrepreneurial Team Conflict <span class="cm">· Tran, Wiklund &amp; Yu</span></span></div>
+            <div class="conf-row"><span class="cy">2021</span><span class="ct">Are Entrepreneurs More Resilient? A Hedonic Treadmill Approach <span class="cm">· Yu &amp; Wiklund ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2021</span><span class="ct">Psychological Vulnerabilities and Gender on Well-being <span class="cm">· Tran, Wiklund, Yu &amp; Pérez-Luño ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2021</span><span class="ct">Crisis and Founder Diversity in VC Investment (COVID-19) <span class="cm">· Yu &amp; Fei ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2020</span><span class="ct">IPR Regimes and New Venture Performance: A Natural Experiment <span class="cm">· Seyed Abootorabi &amp; Yu ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2020</span><span class="ct">Entrepreneurship and Family Life: An Integrative Model <span class="cm">· Yu, Fei, Li &amp; Foo ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2019</span><span class="ct">Entrepreneurship, Self-Care, and Wellbeing <span class="cm">· Yu &amp; Wiklund ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2019</span><span class="ct">Childhood Adversity, Resilience, and Career Success <span class="cm">· Yu, Zhu &amp; Foo ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2019</span><span class="ct">Do Lonely Entrepreneurs Perform Poorly? <span class="cm">· Zhu, Yu &amp; Fan</span></span></div>
+            <div class="conf-row"><span class="cy">2018</span><span class="ct">The Influence of Family on Entrepreneurial Intention <span class="cm">· Zhu &amp; Yu</span></span></div>
+            <div class="conf-row"><span class="cy">2017</span><span class="ct">ADHD Symptoms, Entrepreneurial Orientation and Firm Performance <span class="cm">· Yu &amp; Wiklund ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2016</span><span class="ct">Impulsivity and Entrepreneurship <span class="cm">· Wiklund, Yu, Tucker &amp; Marino ▸</span></span></div>
+            <div class="conf-row"><span class="cy">2016</span><span class="ct">Beyond Cognition: Creativity, Disinhibition and Entrepreneurial Action <span class="cm">· Yu &amp; Lerner ▸</span></span></div>
+            <div class="conf-group">Strategic Management Society (SMS)</div>
+            <div class="conf-row"><span class="cy">2023</span><span class="ct">Strain-based Model of Overperformance and Corporate Financial Misconduct <span class="cm">· Yu &amp; Ge · Toronto</span></span></div>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- TEACHING -->
+      <section class="view" id="teaching">
+        <button class="overview-link" data-view="home">← About</button>
+        <div class="reveal"><div class="eyebrow">Teaching &amp; Mentoring</div><h2 class="sec">Teaching Philosophy</h2>
+          <p class="philos">My teaching philosophy grows directly from my research. Studying ADHD, childhood adversity, and neurodiversity has taught me that cognitive differences are not deficits to accommodate but variations that, under the right conditions, become strengths. I draw on <b>Universal Design for Learning</b> — multiple means of representation, engagement, and expression — translated into concrete choices: varied formats, real-time polling quizzes, live case discussions, and multiple pathways for students to demonstrate learning. Structured but not rigid; lowering barriers without lowering standards.</p>
+          <div class="quote">“I am not a student of this department, but I was able to interact with the class properly because of prof's way of teaching.”</div></div>
+        <div class="block reveal"><h3 class="sec3">Courses &amp; Expertise</h3>
+          <div class="tcards">
+            <div class="tcard"><div class="nm">Corporate Entrepreneurship</div><div class="code">MT5008 · NUS · PG</div><div class="cd">How established organizations foster innovation and renewal. Refined over six years; evaluations rose 4.2 → 4.8.</div></div>
+            <div class="tcard"><div class="nm">Managing the Human Elements of Technology Management</div><div class="code">MT5020 · NUS · MSc MOT</div><div class="cd">Designed from scratch. Bridges technical expertise and human behavior — design thinking, AI-driven management.</div></div>
+            <div class="tcard"><div class="nm">Technology &amp; Innovation Policy</div><div class="code">PP5728 · LKYSPP · PG</div><div class="cd">Delivered in Chinese to government officials and executives; structured frameworks for innovation policy.</div></div>
+            <div class="tcard new"><span class="tag">IN DEVELOPMENT</span><div class="nm">AI &amp; the Human Side of Entrepreneurship</div><div class="code">Self-designed</div><div class="cd">Navigating AI as both a tool and a disruptive force in venture creation and organizational renewal.</div></div>
+          </div></div>
+        <div class="block reveal"><h3 class="sec3">Evaluations</h3>
+          <div class="evalwrap"><table class="evals"><thead><tr><th>Course (NUS, PG)</th><th>Recent effectiveness</th><th>Trend</th></tr></thead><tbody>
+            <tr><td>MT5008 · Corporate Entrepreneurship</td><td><span class="c">4.5–4.8</span></td><td><span class="up">▲ 4.2 → 4.8 / six years</span></td></tr>
+            <tr><td>MT5020 · Human Elements of Tech Mgmt</td><td><span class="c">4.4–4.5</span></td><td><span class="up">▲ at/above faculty avg</span></td></tr>
+            <tr><td>PP5728 · Technology &amp; Innovation Policy</td><td><span class="c">4.1</span></td><td><span style="color:var(--muted-2);font-size:11px">taught in Chinese</span></td></tr>
+          </tbody></table></div>
+          <div class="quote">“Prof Wei Yu is able to bring in very up-to-date examples and case studies… she created a lot of online discussions to encourage students to speak up.”</div></div>
+        <div class="block reveal"><h3 class="sec3">Beyond the Classroom</h3>
+          <div class="note"><b>Research Methods for Management Scholars</b> (2026) — a free, interactive web app, <b>24 modules</b> on quantitative methods, open to early-career scholars worldwide. <a href="https://weiyu-nus.github.io/research-methods/" target="_blank" rel="noopener">Visit →</a><br/><br/><b>Public Research Lecture Series</b> (2019) — bilingual research insights on YouTube &amp; BiliBili. · <b>Summer research boot camps</b>. · <b>Dr. Torpey Teaching Award</b> for PhD Student (Syracuse, 2017).</div></div>
+        <div class="block reveal"><h3 class="sec3">Doctoral Mentoring</h3>
+          <p class="sec-sub" style="margin-bottom:18px;">Sole advisor / dissertation chair — both graduated students secured tenure-track positions.</p>
+          <div class="scard"><div><div class="nm">Haowei Wang</div><div class="meta">NUS · 2025–2029 (expected)</div></div><span class="stag cur">Current</span></div>
+          <div class="scard"><div><div class="nm">Jia Bao</div><div class="meta">NUS · 2020–2024</div></div><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap"><div class="place">→ City University of Macau (Tenure Track)</div><span class="stag grad">Graduated</span></div></div>
+          <div class="scard"><div><div class="nm">Jipeng Fei</div><div class="meta">NUS · 2019–2023</div></div><div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap"><div class="place">→ Beijing Normal University, Zhuhai (Tenure Track)</div><span class="stag grad">Graduated</span></div></div>
+          <div class="committee"><div class="eyebrow" style="margin-bottom:8px;">Committee / Oral / QE Examiner</div><p>Zhuyi Li · Yeyanran Ge · Enchou Han · Wanyu Xu · Nima Javanbakht · Siqi Hou</p></div></div>
+      </section>
+
+      <!-- RECOGNITION -->
+      <section class="view" id="recognition">
+        <button class="overview-link" data-view="home">← About</button>
+        <div class="reveal"><div class="eyebrow">Recognition &amp; Impact</div><h2 class="sec">Awards, Talks &amp; Media</h2></div>
+        <div class="rec-grid reveal">
+          <div class="rec-col"><div class="rec-head">Honors &amp; Awards</div>
+            <div class="rec-row"><span class="ry">2026</span><span class="rt">ACERE Conference Best Potential Award</span></div>
+            <div class="rec-row"><span class="ry">2023</span><span class="rt">Total Defence Award — NS Advocate Award<span class="rs">Ministry of Defence, Singapore</span></span></div>
+            <div class="rec-row"><span class="ry">2018, 2020</span><span class="rt">Academy of Management Best Paper<span class="rs">Top 5–10% of accepted papers</span></span></div>
+            <div class="rec-row"><span class="ry">2016–23</span><span class="rt">BCERC Babson Top 40 Paper<span class="rs">5× (2016, 2019, 2020, 2021, 2023)</span></span></div>
+            <div class="rec-row"><span class="ry">2018</span><span class="rt">All-University Doctoral Prize<span class="rs">Syracuse University — dissertation</span></span></div>
+            <div class="rec-row"><span class="ry">2017</span><span class="rt">Dr. Torpey Teaching Award for PhD Student<span class="rs">Syracuse University</span></span></div>
+            <div class="rec-row"><span class="ry">2013</span><span class="rt">Beta Gamma Sigma<span class="rs">Top 20%, AACSB business schools</span></span></div>
           </div>
-          <div style="margin-bottom:18px;">
-            <div style="font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:#1a1a1a;line-height:1;">16</div>
-            <div style="font-size:12px;color:#888;margin-top:4px;">Peer-reviewed publications</div>
-            <div style="font-size:11.5px;color:#aaa;margin-top:2px;">Including 2 in UTD24 and 10 in FT50 journals</div>
-          </div>
-          <div style="height:1px;background:#f0ede8;margin:0 0 18px;"></div>
-          <div style="margin-bottom:18px;">
-            <div style="font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:#1a1a1a;line-height:1;">1,256</div>
-            <div style="font-size:12px;color:#888;margin-top:4px;">Citations (Google Scholar)</div>
-          </div>
-          <div style="height:1px;background:#f0ede8;margin:0 0 18px;"></div>
-          <div style="margin-bottom:18px;">
-            <div style="font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:#1a1a1a;line-height:1;">3.14</div>
-            <div style="font-size:12px;color:#888;margin-top:4px;">Field-Weighted Citation Impact</div>
-            <div style="font-size:11.5px;color:#aaa;margin-top:2px;">Scopus · 3× world average</div>
-          </div>
-          <div style="height:1px;background:#f0ede8;margin:0 0 18px;"></div>
-          <div style="margin-bottom:18px;">
-            <div style="font-family:'Playfair Display',serif;font-size:34px;font-weight:700;color:#1a1a1a;line-height:1;">40%</div>
-            <div style="font-size:12px;color:#888;margin-top:4px;">of publications among the top 10% most cited worldwide</div>
-            <div style="font-size:11.5px;color:#aaa;margin-top:2px;">Scopus</div>
-          </div>
-          <div style="height:1px;background:#f0ede8;margin:0 0 18px;"></div>
-          <div style="margin-bottom:18px;">
-            <div style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#1a1a1a;line-height:1;">100%</div>
-            <div style="font-size:12px;color:#888;margin-top:4px;">in SJR Q1 journals & top 10% by CiteScore</div>
-          </div>
-          <div style="height:1px;background:#f0ede8;margin:0 0 18px;"></div>
-          <div>
-            <div style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#1a1a1a;line-height:1;">3</div>
-            <div style="font-size:12px;color:#888;margin-top:4px;">PhD dissertation advisor (sole)</div>
-            <div style="font-size:11.5px;color:#aaa;margin-top:2px;">2 graduated to tenure-track positions</div>
+          <div class="rec-col"><div class="rec-head">Invited Talks &amp; Visits <span class="muted-note">★ organizer-funded</span></div>
+            <div class="rec-row"><span class="ry">2026</span><span class="rt">Speaker, CUHK-Shenzhen seminar series <span class="star">★</span></span></div>
+            <div class="rec-row"><span class="ry">2024</span><span class="rt">Keynote Speaker, New Perspectives in Entrepreneurial Diversity and Wellbeing, Trinity College Dublin, Ireland <span class="star">★</span></span></div>
+            <div class="rec-row"><span class="ry">2020–23</span><span class="rt">Presenter &amp; Discussant, Entrepreneur Well-being Across Contexts Symposium, Academy of Management Conference</span></div>
+            <div class="rec-row"><span class="ry">2021</span><span class="rt">Speaker &amp; Panelist, Job Market Panel, AOM Entrepreneurship Division Doctoral Consortium</span></div>
+            <div class="rec-row"><span class="ry">2020</span><span class="rt">Academic Visit, DTU — Technical University of Denmark <span class="star">★</span></span></div>
+            <div class="rec-row"><span class="ry">2019</span><span class="rt">Academic Visit, Syracuse University <span class="star">★</span></span></div>
+            <div class="rec-row"><span class="ry">2019</span><span class="rt">Speaker, Asian School of Business seminar series <span class="star">★</span></span></div>
+            <div class="rec-row"><span class="ry">2019</span><span class="rt">Presenter &amp; Discussant, The Future of Conducting and Publishing Research in Entrepreneurship, Innovation Management and Strategy, Bologna, Italy <span class="star">★</span></span></div>
+            <div class="rec-row"><span class="ry">2018</span><span class="rt">Keynote Speaker, The 3rd Youth Scholar Forum for Entrepreneurship, Hangzhou, China <span class="star">★</span></span></div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="block reveal"><div class="rec-head">Selected Media Coverage</div>
+          <div class="cards">
+            <a class="mcard" href="https://www.fastcompany.com/40431610/this-scientist-is-studying-how-adhd-helps-drive-some-entrepreneurs" target="_blank" rel="noopener"><div class="src">Fast Company · 2017</div><div class="hl">This Scientist Is Studying How ADHD Can Help Entrepreneurs Succeed</div><div class="rd">Read →</div></a>
+            <a class="mcard" href="https://oa.mg/blog/does-childhood-adversity-make-you-a-better-entrepreneur/" target="_blank" rel="noopener"><div class="src">OA.mg · 2023</div><div class="hl">Does Childhood Adversity Make You a Better Entrepreneur?</div><div class="rd">Read →</div></a>
+            <a class="mcard" href="https://www.additudemag.com/entrepreneurship-adhd-business-research-traits-stories/" target="_blank" rel="noopener"><div class="src">ADDitude</div><div class="hl">Entrepreneurship and ADHD: Is There a Connection?</div><div class="rd">Read →</div></a>
+            <a class="mcard" href="https://web.archive.org/web/20170922033412/http://www.huffingtonpost.com/researchgate/adhd-makes-for-better-ent_b_13453528.html" target="_blank" rel="noopener"><div class="src">HuffPost</div><div class="hl">ADHD Makes for Better Entrepreneurs</div><div class="rd">Read (archived) →</div></a>
+          </div></div>
+      </section>
 
-<!-- RESEARCH -->
-<section id="research" style="padding:100px 40px;background:#fff;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Research</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 16px;">Publications</h2>
-      <p style="font-family:'Source Serif 4',serif;font-size:16px;color:#777;margin:0 0 40px;max-width:650px;">
-        * denotes corresponding author. All 16 publications are in SJR Q1 journals and in the top 10% of journals by CiteScore.
-      </p>
-    </div>
-    <div class="fade-in" style="display:flex;gap:8px;margin-bottom:40px;flex-wrap:wrap;" id="stream-buttons">
-      <button class="stream-btn active" data-stream="ae">Adversity & Entrepreneurship (14)</button>
-      <button class="stream-btn" data-stream="ai">Adversity & Innovation (2)</button>
-      <button class="stream-btn" data-stream="wp">Under Review & Pipeline (9)</button>
-    </div>
-    <div id="publications-list"></div>
-  </div>
-</section>
-
-<!-- AWARDS -->
-<section style="padding:90px 40px;background:#fdfcfa;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Recognition</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 32px;">Honors & Awards</h2>
-    </div>
-    <div id="awards-list"></div>
-  </div>
-</section>
-
-<!-- MEDIA -->
-<section style="padding:90px 40px;background:#fff;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Impact</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 32px;">Selected Media Coverage</h2>
-    </div>
-    <div id="media-list" class="grid-2" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;"></div>
-  </div>
-</section>
-
-<!-- INVITED TALKS -->
-<section style="padding:90px 40px;background:#fdfcfa;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Invited</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 8px;">Symposia, Workshops & Talks</h2>
-      <p style="font-size:13px;color:#999;margin:0 0 32px;">All talks have been invited by organizers. ★ denotes organizer-funded.</p>
-    </div>
-    <div id="talks-list"></div>
-  </div>
-</section>
-
-<!-- TEACHING -->
-<section id="teaching" style="padding:100px 40px;background:#fff;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Teaching</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 32px;">Courses & Expertise</h2>
-    </div>
-    <div class="grid-2" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;" id="courses-list"></div>
-    <div class="fade-in" style="margin-top:40px;padding:20px 24px;border-radius:8px;background:#fdfcfa;border:1px solid #eee;">
-      <div style="font-size:13px;color:#666;">
-        <strong style="color:#333;">Teaching Recognition:</strong> Dr. Torpey Teaching Award for PhD Student, Syracuse University (2017)
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STUDENTS -->
-<section id="students" style="padding:100px 40px;background:#fdfcfa;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Mentorship</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 8px;">PhD Dissertation Advising</h2>
-      <p style="font-family:'Source Serif 4',serif;font-size:16px;color:#777;margin:0 0 40px;">Sole advisor / dissertation chair for the following PhD students.</p>
-    </div>
-    <div id="students-list"></div>
-    <div class="fade-in" style="margin-top:40px;">
-      <div style="font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#aaa;margin-bottom:14px;">PhD Committee Member / Oral / QE Examiner</div>
-      <div style="font-size:14px;color:#777;line-height:1.8;">
-        Zhuyi Li (2017–2022) · Yeyanran Ge (2018–2022) · Enchou Han (2016–2021) · Wanyu Xu (2019–2024) · Nima Javanbakht (2019–2024) · Siqi Hou (2023–Present)
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICE -->
-<section id="service" style="padding:100px 40px;background:#fff;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Service</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 32px;">Professional & University Service</h2>
-    </div>
-    <div class="grid-2" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
-      <div class="fade-in" style="padding:32px;border-radius:8px;border:1px solid #eee;background:#fdfcfa;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:16px;">Ad-hoc Reviewer</div>
-        <div id="reviewer-tags" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
-      </div>
-      <div class="fade-in" style="padding:32px;border-radius:8px;border:1px solid #eee;background:#fdfcfa;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:16px;">University & Community Service</div>
-        <div style="font-size:14px;color:#555;line-height:2;">
-          NUS ISEM Overseas Researcher Workshop organizer (2024–25)<br />
-          ISEM Commencement Academic Procession (2022)<br />
-          NUS Open House (2019, 2023–2026)<br />
-          Public Research Lecture Series on YouTube & BiliBili (2019)
+      <!-- SERVICE -->
+      <section class="view" id="service">
+        <button class="overview-link" data-view="home">← About</button>
+        <div class="reveal"><div class="eyebrow">Service</div><h2 class="sec">Professional &amp; University Service</h2></div>
+        <div class="two reveal">
+          <div class="panel"><div class="eyebrow">Editorial Service</div>
+            <ul><li><b style="color:var(--ink)">Associate Editor</b> (invited) — <em>Entrepreneurship Theory &amp; Practice</em>, 2026</li><li>Editorial Review Board — <em>Journal of Business Venturing</em> (2020–)</li><li>Editorial Review Board — <em>Entrepreneurship Theory and Practice</em> (2018–)</li></ul>
+            <div class="eyebrow" style="margin:16px 0 11px;">Ad-hoc Reviewer</div>
+            <div class="tagrow"><span>AMJ</span><span>SMJ</span><span>SEJ</span><span>Journal of Management</span><span>JMS</span><span>Small Business Economics</span><span>Technovation</span><span>AOM</span><span>BCERC</span></div>
+          </div>
+          <div class="panel"><div class="eyebrow">University &amp; Community</div>
+            <ul><li>NUS ISEM Faculty Search Committee (2026)</li><li>NUS ISEM Overseas Researcher Workshop organizer (2024–25)</li><li>ISEM Commencement Academic Procession (2022)</li><li>NUS Open House (2019, 2023–2026)</li><li>Public Research Lecture Series — YouTube &amp; BiliBili (2019)</li></ul>
+            <div class="eyebrow" style="margin:16px 0 11px;">Speaker / Discussant</div>
+            <ul><li>Keynote &amp; Discussant — Trinity College Dublin (2024)</li><li>Panelist — AOM Doctoral Consortium Job Market Panel (2021)</li><li>Discussant — Bologna (2019); AOM Well-being Symposium (2020, 2022, 2023)</li></ul>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="view" id="contact">
+        <button class="overview-link" data-view="home">← About</button>
+        <div class="reveal"><div class="eyebrow">Contact</div><h2 class="sec">Get in Touch</h2></div>
+        <div class="three reveal">
+          <div><div class="eyebrow">Department</div><p>Industrial Systems Engineering &amp; Management<br/>College of Design and Engineering<br/>National University of Singapore</p></div>
+          <div><div class="eyebrow">Connect</div><a href="mailto:iseyw@nus.edu.sg">iseyw@nus.edu.sg</a><a href="https://scholar.google.com/citations?user=wVvh7VAAAAAJ&hl=en&inst=3212728378801010220" target="_blank" rel="noopener">Google Scholar</a><p style="margin-top:6px;">+65 8243-5854</p></div>
+          <div><div class="eyebrow">Skills</div><p><b style="color:var(--ink)">Languages:</b> Chinese (native), English (fluent)<br/><b style="color:var(--ink)">Technical:</b> Stata, R, Python, SQL</p></div>
+          <div><div class="eyebrow">Methods</div><p>Econometrics, natural experiments, field experiments, survey design</p></div>
+        </div>
+      </section>
+    </main>
   </div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact" style="padding:100px 40px 60px;background:#fdfcfa;">
-  <div style="max-width:1100px;margin:0 auto;">
-    <div class="fade-in">
-      <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a7050;margin-bottom:12px;font-weight:600;">Contact</div>
-      <h2 style="font-family:'Playfair Display',serif;font-size:36px;font-weight:400;color:#1a1a1a;margin:0 0 32px;">Get in Touch</h2>
-    </div>
-    <div class="grid-2" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
-      <div class="fade-in" style="padding:36px 32px;border-radius:8px;border:1px solid #eee;background:#fff;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:14px;">Department</div>
-        <div style="font-family:'Source Serif 4',serif;font-size:16px;color:#333;line-height:1.7;">
-          Department of Industrial Systems<br />Engineering & Management<br />
-          College of Design and Engineering<br />
-          National University of Singapore
-        </div>
-      </div>
-      <div class="fade-in" style="padding:36px 32px;border-radius:8px;border:1px solid #eee;background:#fff;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:14px;">Connect</div>
-        <div style="font-family:'Source Serif 4',serif;font-size:16px;color:#333;line-height:2.2;">
-          <a href="mailto:iseyw@nus.edu.sg" style="color:#8a7050;text-decoration:none;border-bottom:1px solid rgba(138,112,80,0.3);">iseyw@nus.edu.sg</a><br />
-          <a href="https://scholar.google.com/citations?user=wVvh7VAAAAAJ&hl=en&inst=3212728378801010220" target="_blank" rel="noopener noreferrer" style="color:#8a7050;text-decoration:none;border-bottom:1px solid rgba(138,112,80,0.3);">Google Scholar</a><br />
-          <span style="color:#666;">+65 8243-5854</span>
-        </div>
-      </div>
-      <div class="fade-in" style="padding:36px 32px;border-radius:8px;border:1px solid #eee;background:#fff;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8a7050;margin-bottom:14px;">Skills</div>
-        <div style="font-size:14px;color:#555;line-height:2;">
-          <strong style="color:#333;">Languages:</strong> Chinese (native), English (fluent)<br />
-          <strong style="color:#333;">Technical:</strong> Stata, R, Python, SQL<br />
-          <strong style="color:#333;">Methods:</strong> Econometrics, natural experiments, field experiments, survey design
-        </div>
-      </div>
-    </div>
-    <!-- Footer -->
-    <div class="fade-in" style="margin-top:60px;padding-top:30px;border-top:1px solid #eee;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
-      <span style="font-family:'Source Serif 4',serif;font-size:14px;color:#bbb;">© 2026 Wei Yu 俞薇</span>
-      <span style="font-size:11px;color:#ccc;letter-spacing:0.5px;">Editorial Board · Journal of Business Venturing · Entrepreneurship Theory and Practice</span>
-    </div>
-  </div>
-</section>
+  <footer><div class="foot"><p>© 2026 Wei Yu 俞薇</p><p>Editorial Board · Journal of Business Venturing · Entrepreneurship Theory and Practice</p></div></footer>
 
-<script>
-// === DATA ===
-const pubsAE = [
-  {a:"Bort, J., Wiklund, J., Yu, W.",y:2025,t:"Firm Growth and the Job Satisfaction of the Startup Workforce",j:"Strategic Management Journal",v:"46(10), 2535-2572",b:["SJR Q1","UTD24","FT50","ABS 4*","ABDC A*"]},
-  {a:"Yu, W., Kwon, S. W., Bokhari, K., & Bao, J.",y:2025,t:"Unseen strain: how entrepreneurial pursuits undermine spousal well-being",j:"Small Business Economics",v:"1-24",b:["SJR Q1","ABS 3","ABDC A"]},
-  {a:"Tran, M. H., Wiklund, J., Yu, W., & Perez-Luno, A.",y:2025,t:"ADHD and entrepreneurship: the role of perceived team conflict and gender on well-being",j:"Small Business Economics",v:"1-28",b:["SJR Q1","ABS 3","ABDC A"]},
-  {a:"Yu, W.*, Sun, S., Foo, MD., Zhang, SX., Li, J.",y:2025,t:"Time Pressed, Yet Unbroken: Understanding Personal Resources Against Entrepreneurial Exhaustion",j:"Journal of Small Business Management",v:"1-42",b:["SJR Q1","ABS 3","ABDC A"]},
-  {a:"Yu, W., Fei, JP., Peng, B., Bort, J.",y:2024,t:"When a Crisis Hits: An Examination of the Impact of the Global Financial Crisis and the COVID-19 Pandemic on Financing for Female Entrepreneurs",j:"Journal of Business Venturing",v:"39(2), 106379",b:["SJR Q1","FT50","ABS 4*","ABDC A*"]},
-  {a:"Yu, W.*, Stephan, U., Bao, J.",y:2023,t:"Childhood Adversities: Mixed Blessings for Entrepreneurial Entry",j:"Journal of Business Venturing",v:"38(2), 106287",b:["SJR Q1","FT50","ABS 4*","ABDC A*"]},
-  {a:"Zhu, F., Yu, W., Fan, S. X., Jonathan, J. G.",y:2023,t:"Should I Stay or Should I Go? The Impact of Entrepreneurs' Loneliness on Business Exit Intentions Through Entrepreneurial Passion",j:"Journal of Business Venturing Insights",v:"19, e00368",b:["SJR Q1","ABS 2","ABDC A"]},
-  {a:"Yu, W.*, Zhu, F., Der Foo, M., Wiklund, J.",y:2022,t:"What Does Not Kill You Makes You Stronger: Entrepreneurs' Childhood Adversity, Resilience, and Career Success",j:"Journal of Business Research",v:"151, 40–55",b:["SJR Q1","ABS 3","ABDC A"]},
-  {a:"Yu, W.*, Li. Z., Foo, MD. Sun, S.",y:2022,t:"Perceived Social Undermining Keeps Me up at Night and Disengaged the Next Day: The Mediating Role of Sleep Quality and The Buffering Role of Trait Resilience",j:"Journal of Business Venturing",v:"37(2), 106186",b:["SJR Q1","FT50","ABDC A*"]},
-  {a:"Yu, W.*, Wiklund, J., Pérez-Luño, A.",y:2021,t:"ADHD Symptoms, Entrepreneurial Orientation (EO), and Firm Performance",j:"Entrepreneurship Theory and Practice",v:"45(1), 92–117",b:["SJR Q1","FT50","ABS 4*","ABDC A*"]},
-  {a:"Miller, D., Wiklund, J., Yu, W.* [Equal Authorship]",y:2020,t:"Mental Health in the Family Business: A Conceptual Model and a Research Agenda",j:"Entrepreneurship Theory and Practice",v:"44(1), 55–80",b:["SJR Q1","FT50","ABS 4*","ABDC A*"]},
-  {a:"Nason, R.S., Wiklund, J., McKelvie, A., Hitt, M., Yu, W.",y:2019,t:"Orchestrating Boundaries: The Effect of R&D Boundary Permeability on New Venture Growth",j:"Journal of Business Venturing",v:"34(1), 63–79",b:["SJR Q1","FT50","ABS 4*","ABDC A*"]},
-  {a:"Wiklund, J., Yu, W.*, Patzelt, H.",y:2018,t:"Impulsivity and Entrepreneurial Action",j:"Academy of Management Perspectives",v:"32(3), 379-403",b:["SJR Q1","ABS 4","ABDC A"]},
-  {a:"Wiklund, J., Yu, W., Tucker, R., Marino, L.D.",y:2017,t:"ADHD, Impulsivity and Entrepreneurship",j:"Journal of Business Venturing",v:"32(6), 627–656",b:["SJR Q1","FT50","ABS 4*","ABDC A*"]},
-];
-const pubsAI = [
-  {a:"Ye, Y., Yu, W.*, Nason, R.",y:2021,t:"Performance Feedback Persistence: Comparative Effects of Historical Versus Peer Performance Feedback on Innovative Search",j:"Journal of Management",v:"47(4), 1053–1081",b:["SJR Q1","FT50","ABS 4*","ABDC A*"]},
-  {a:"Yu, W*, Minniti, M, Nason, R.",y:2019,t:"Underperformance Duration and Innovative Search: Evidence from the High-tech Manufacturing Industry",j:"Strategic Management Journal",v:"40(5), 836–861",b:["SJR Q1","UTD24","FT50","ABS 4*","ABDC A*"]},
-];
-const wp = [
-  {a:"Yu, W., Tran, M., Wiklund, J., Stephan, U.",t:"ADHD and Entrepreneurial Pursuits: The Roles of Gender and Intelligence",s:"1st R&R at Strategic Entrepreneurship Journal"},
-  {a:"Yu, W.*",t:"Searching Under the Sign: Zodiac-Year Luck Superstition and Problemistic Search",s:"Under review at Strategic Management Journal"},
-  {a:"Ge Y, Yu W, Minniti, M., Shi D, Dang J.",t:"China's Bayh-Dole Act and University Patenting: A Contingency Perspective",s:"Reject & Resubmit at Strategic Entrepreneurship Journal"},
-  {a:"Yu, W.*",t:"The Good-Firm Paradox: When Financial Success Breeds Social Responsibility—And When It Doesn't",s:"To be submitted to Strategic Management Journal"},
-  {a:"Yu, W.*",t:"AI and Firm Growth Theory",s:"To be submitted to Strategic Management Journal"},
-  {a:"Yu, W.*",t:"Gendered Spillover Effects of Entrepreneurial Fraud",s:"To be submitted to Journal of Applied Psychology"},
-  {a:"Yu, W.*",t:"AI Assistance and Entrepreneurial Performance: A Field Experiment",s:"To be submitted to Management Science"},
-  {a:"Yu, W., Bao, J.",t:"The Dual Faces of Female Agency: A Replication and Extension Study",s:"To be submitted to Journal of Applied Psychology"},
-  {a:"Abootorabi, H., Yu, W.",t:"Intellectual Property Rights' Regimes and New Venture Performance: Empirical Evidence from A Natural Experiment",s:"To be submitted to Research Policy"},
-];
+  <script>
+    const PUBS=[
+      {y:2025,t:"Firm Growth and the Job Satisfaction of the Startup Workforce",doi:"10.1002/smj.3728",sel:true,a:"Bort, J., Wiklund, J., Yu, W.",v:"Strategic Management Journal, 46(10), 2535–2572",theme:"ent",corr:false,methods:["Archival"],badges:[["sjr","SJR Q1"],["utd","UTD24"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Finds an inverted-U: moderate growth lifts the startup workforce's job satisfaction, but extreme growth erodes it through managerial and socio-structural strain — connecting to the Penrose effect."},
+      {y:2025,t:"Unseen Strain: How Entrepreneurial Pursuits Undermine Spousal Well-being",doi:"10.1007/s11187-025-01136-w",a:"Yu, W., Kwon, S. W., Bokhari, K., & Bao, J.",v:"Small Business Economics, 66(3), 1183–1206",theme:"ent",corr:false,methods:["Survey"],badges:[["sjr","SJR Q1"],["abs","ABS 3"],["abdc","ABDC A"]],s:"Shows how the demands of entrepreneurial pursuits spill beyond the founder to undermine the well-being of their spouse."},
+      {y:2025,t:"ADHD and Entrepreneurship: The Role of Perceived Team Conflict and Gender on Well-being",doi:"10.1007/s11187-025-01111-5",a:"Tran, M. H., Wiklund, J., Yu, W., & Pérez-Luño, A.",v:"Small Business Economics, 66(1), 485–512",theme:"ent",corr:false,methods:["Survey"],badges:[["sjr","SJR Q1"],["abs","ABS 3"],["abdc","ABDC A"]],s:"Links ADHD to entrepreneurial well-being through perceived team conflict, with gender as a key contingency."},
+      {y:2025,t:"Time Pressed, Yet Unbroken: Understanding Personal Resources Against Entrepreneurial Exhaustion",doi:"10.1080/00472778.2025.2465379",a:"Yu, W., Sun, S., Foo, M. D., Zhang, S. X., Li, J.",v:"Journal of Small Business Management, 63(6), 2950–2991",theme:"ent",corr:true,methods:["Survey"],badges:[["sjr","SJR Q1"],["abs","ABS 3"],["abdc","ABDC A"]],s:"Identifies the personal resources that protect entrepreneurs from exhaustion under sustained time pressure."},
+      {y:2024,t:"When a Crisis Hits: The Global Financial Crisis and COVID-19 on Financing for Female Entrepreneurs",doi:"10.1016/j.jbusvent.2024.106379",sel:true,a:"Yu, W., Fei, J. P., Peng, B., Bort, J.",v:"Journal of Business Venturing, 39(2), 106379",theme:"ent",corr:false,methods:["Archival"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Compares two macro-crises to show how systemic shocks reshape the financing female entrepreneurs can access."},
+      {y:2023,t:"Childhood Adversities: Mixed Blessings for Entrepreneurial Entry",doi:"10.1016/j.jbusvent.2023.106287",sel:true,a:"Yu, W., Stephan, U., Bao, J.",v:"Journal of Business Venturing, 38(2), 106287",theme:"ent",corr:true,methods:["Survey"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Finds childhood adversity is a 'mixed blessing': it imposes ability challenges while cultivating rule-breaking tendencies that facilitate starting a venture."},
+      {y:2023,t:"Should I Stay or Should I Go? Entrepreneurs' Loneliness and Business Exit Intentions Through Entrepreneurial Passion",doi:"10.1016/j.jbvi.2022.e00368",a:"Zhu, F., Yu, W., Fan, S. X., Jonathan, J. G.",v:"Journal of Business Venturing Insights, 19, e00368",theme:"ent",corr:false,methods:["Survey"],badges:[["sjr","SJR Q1"],["abs","ABS 2"],["abdc","ABDC A"]],s:"Connects entrepreneurs' loneliness to business-exit intentions through the erosion of entrepreneurial passion."},
+      {y:2022,t:"What Does Not Kill You Makes You Stronger: Entrepreneurs' Childhood Adversity, Resilience, and Career Success",doi:"10.1016/j.jbusres.2022.06.035",a:"Yu, W., Zhu, F., Der Foo, M., Wiklund, J.",v:"Journal of Business Research, 151, 40–55",theme:"ent",corr:true,methods:["Survey"],badges:[["sjr","SJR Q1"],["abs","ABS 3"],["abdc","ABDC A"]],s:"Shows resilience links childhood adversity to career success along an inverted-U: too little leaves entrepreneurs vulnerable, too much depletes."},
+      {y:2022,t:"Perceived Social Undermining Keeps Me up at Night and Disengaged the Next Day: Sleep Quality and Trait Resilience",doi:"10.1016/j.jbusvent.2021.106186",a:"Yu, W., Li, Z., Foo, M. D., Sun, S.",v:"Journal of Business Venturing, 37(2), 106186",theme:"ent",corr:true,methods:["Experience sampling"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abdc","ABDC A*"]],s:"Using experience sampling, shows social undermining disrupts entrepreneurs' sleep and next-day engagement, buffered by trait resilience."},
+      {y:2021,t:"ADHD Symptoms, Entrepreneurial Orientation (EO), and Firm Performance",doi:"10.1177/1042258719892987",a:"Yu, W., Wiklund, J., Pérez-Luño, A.",v:"Entrepreneurship Theory and Practice, 45(1), 92–117",theme:"ent",corr:true,methods:["Survey"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Demonstrates that ADHD symptoms can raise entrepreneurial orientation and firm performance — reframing a clinical deficit as a conditional asset."},
+      {y:2020,t:"Mental Health in the Family Business: A Conceptual Model and a Research Agenda",doi:"10.1177/1042258719837987",a:"Miller, D., Wiklund, J., Yu, W. (equal authorship)",v:"Entrepreneurship Theory and Practice, 44(1), 55–80",theme:"ent",corr:true,methods:["Conceptual"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Develops a conceptual model and research agenda on how mental-health conditions shape family-business dynamics and outcomes."},
+      {y:2019,t:"Orchestrating Boundaries: The Effect of R&D Boundary Permeability on New Venture Growth",doi:"10.1016/j.jbusvent.2018.05.003",a:"Nason, R. S., Wiklund, J., McKelvie, A., Hitt, M., Yu, W.",v:"Journal of Business Venturing, 34(1), 63–79",theme:"ent",corr:false,methods:["Archival"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Shows how the permeability of a venture's R&D boundaries shapes new-venture growth."},
+      {y:2018,t:"Impulsivity and Entrepreneurial Action",doi:"10.5465/amp.2016.0177",a:"Wiklund, J., Yu, W., Patzelt, H.",v:"Academy of Management Perspectives, 32(3), 379–403",theme:"ent",corr:true,methods:["Conceptual"],badges:[["sjr","SJR Q1"],["abs","ABS 4"],["abdc","ABDC A"]],s:"Theorizes impulsivity as a double-edged driver: it reduces hesitation and accelerates entrepreneurial action even as it carries costs."},
+      {y:2017,t:"ADHD, Impulsivity and Entrepreneurship",doi:"10.1016/j.jbusvent.2017.07.002",sel:true,a:"Wiklund, J., Yu, W., Tucker, R., Marino, L. D.",v:"Journal of Business Venturing, 32(6), 627–656",theme:"ent",corr:false,methods:["Survey"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"The foundational study: links ADHD and impulsivity to entrepreneurial entry and action, opening the neurodiversity-as-asset program."},
+      {y:2021,t:"Performance Feedback Persistence: Historical Versus Peer Performance Feedback on Innovative Search",doi:"10.1177/0149206320916225",a:"Ye, Y., Yu, W., Nason, R.",v:"Journal of Management, 47(4), 1053–1081",theme:"inn",corr:true,methods:["Archival"],badges:[["sjr","SJR Q1"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Shows peer feedback — more persistent than historical feedback — produces stronger effects on innovative search."},
+      {y:2019,t:"Underperformance Duration and Innovative Search: Evidence from the High-tech Manufacturing Industry",doi:"10.1002/smj.2988",sel:true,a:"Yu, W., Minniti, M., Nason, R.",v:"Strategic Management Journal, 40(5), 836–861",theme:"inn",corr:true,methods:["Archival"],badges:[["sjr","SJR Q1"],["utd","UTD24"],["ft50","FT50"],["abs","ABS 4*"],["abdc","ABDC A*"]],s:"Demonstrates that the duration of underperformance — not merely its presence — catalyzes innovative search."}
+    ];
+    const PIPELINE=[
+      {t:"ADHD and Entrepreneurial Pursuits: The Roles of Gender and Intelligence",a:"Yu, W., Tran, M., Wiklund, J., Stephan, U.",st:"2nd R&R · Applied Psychology"},
+      {t:"Searching Under the Sign: Zodiac-Year Luck Superstition and Problemistic Search",a:"Yu, W.",st:"Targeting AMJ"},
+      {t:"The Good-Firm Paradox: When Financial Success Breeds Social Responsibility",a:"Yu, W.",st:"Targeting SMJ"},
+      {t:"AI and Firm Growth Theory",a:"Yu, W.",st:"Targeting SMJ"},
+      {t:"Gendered Spillover Effects of Entrepreneurial Fraud",a:"Yu, W.",st:"Targeting Management Science"},
+      {t:"AI Assistance and Entrepreneurial Performance: A Field Experiment",a:"Yu, W.",st:"Targeting Management Science"}
+    ];
+    const JS_=t=>(t.match(/^[^,]+/)||[""])[0].trim();
+    const state={theme:"all",q:"",year:"",journal:"",method:"",open:new Set()};
+    const $=s=>document.querySelector(s);
+    (function(){
+      const ys=[...new Set(PUBS.map(p=>p.y))].sort((a,b)=>b-a), js=[...new Set(PUBS.map(p=>JS_(p.v)))].sort(), ms=[...new Set(PUBS.flatMap(p=>p.methods))].sort();
+      ys.forEach(y=>$("#fYear").insertAdjacentHTML("beforeend",`<option>${y}</option>`));
+      js.forEach(j=>$("#fJournal").insertAdjacentHTML("beforeend",`<option>${j}</option>`));
+      ms.forEach(m=>$("#fMethod").insertAdjacentHTML("beforeend",`<option>${m}</option>`));
+    })();
+    const scholar=t=>"https://scholar.google.com/scholar?q="+encodeURIComponent(t);
+    function render(){
+      const list=$("#pubList");
+      if(state.theme==="pipe"){
+        const q=state.q.toLowerCase(), it=PIPELINE.filter(p=>!q||(p.t+p.a+p.st).toLowerCase().includes(q));
+        list.innerHTML=it.length?it.map(p=>`<div class="pipe"><div><div class="t">${p.t}</div><div class="a">${p.a}</div></div><div class="st">${p.st}</div></div>`).join(""):`<p class="no-results">No matching papers.</p>`;
+        $("#countText").textContent=`Showing ${it.length} of ${PIPELINE.length} working papers`; flt(false); return;
+      }
+      flt(true);
+      const q=state.q.toLowerCase();
+      const it=PUBS.filter(p=>{
+        if(state.theme==="selected"){if(!p.sel)return false;}
+        else if(state.theme!=="all"&&p.theme!==state.theme)return false;
+        if(state.year&&String(p.y)!==state.year)return false;
+        if(state.journal&&JS_(p.v)!==state.journal)return false;
+        if(state.method&&!p.methods.includes(state.method))return false;
+        if(q&&!(p.t+" "+p.a+" "+p.v).toLowerCase().includes(q))return false; return true;
+      });
+      list.innerHTML=it.length?it.map(p=>{const o=state.open.has(p.t);return `<article class="pub"><div class="pub-year">${p.y}</div><div><a class="pub-title" href="${p.doi?'https://doi.org/'+p.doi:scholar(p.t)}" target="_blank" rel="noopener">${p.corr?'<span class="star" title="corresponding author">✻ </span>':''}${p.t}<span class="ext">↗ ${p.doi?'DOI':'Scholar'}</span></a><div class="pub-authors">${p.a}</div><div class="pub-venue"><em>${JS_(p.v)}</em>${p.v.slice(JS_(p.v).length)}</div><div class="pub-badges">${p.sel?'<span class="badge b-sel" title="Selected work">★ Selected</span>':''}${p.badges.map(b=>`<span class="badge b-${b[0]}" title="${bt(b[0])}">${b[1]}</span>`).join("")}</div><button class="sum-toggle ${o?'open':''}" data-t="${encodeURIComponent(p.t)}"><span class="ar">▸</span> ${o?'Hide':'Summary'}</button><div class="pub-summary" style="${o?'max-height:240px':''}"><p>${p.s}</p></div></div></article>`;}).join(""):`<p class="no-results">No publications match these filters. <a href="#" id="ri">Clear</a></p>`;
+      $("#countText").textContent=`Showing ${it.length} of ${PUBS.length}`;
+      const ri=$("#ri"); if(ri)ri.onclick=e=>{e.preventDefault();reset();}
+      document.querySelectorAll(".sum-toggle").forEach(b=>b.onclick=()=>{const t=decodeURIComponent(b.dataset.t),o=!state.open.has(t);o?state.open.add(t):state.open.delete(t);const s=b.nextElementSibling;b.classList.toggle("open",o);b.innerHTML=`<span class="ar">▸</span> ${o?'Hide':'Summary'}`;s.style.maxHeight=o?s.scrollHeight+30+"px":"0";});
+    }
+    const bt=k=>({sjr:"Scimago Q1 (top quartile)",utd:"UT Dallas Top-24",ft50:"Financial Times Top-50",abs:"Chartered ABS rank",abdc:"Australian BDC rank"}[k]||"");
+    function flt(on){["#fYear","#fJournal","#fMethod"].forEach(s=>{$(s).style.opacity=on?1:.4;$(s).style.pointerEvents=on?"auto":"none";});}
+    function setTheme(t){state.theme=t;document.querySelectorAll(".theme-tabs .tab").forEach(x=>x.classList.toggle("active",x.dataset.theme===t));render();}
+    function reset(){state.q="";state.year="";state.journal="";state.method="";$("#pubSearch").value="";$("#fYear").value="";$("#fJournal").value="";$("#fMethod").value="";setTheme("all");}
+    $("#pubSearch").addEventListener("input",e=>{state.q=e.target.value;render();});
+    $("#fYear").addEventListener("change",e=>{state.year=e.target.value;render();});
+    $("#fJournal").addEventListener("change",e=>{state.journal=e.target.value;render();});
+    $("#fMethod").addEventListener("change",e=>{state.method=e.target.value;render();});
+    $("#clearFilters").addEventListener("click",reset);
+    document.querySelectorAll(".theme-tabs .tab").forEach(t=>t.addEventListener("click",()=>setTheme(t.dataset.theme)));
+    $("#legendToggle").addEventListener("click",()=>$("#legend").classList.toggle("open"));
+    document.querySelectorAll(".stream").forEach(s=>s.addEventListener("click",()=>{setTheme(s.dataset.theme);$("#research .pub-controls").scrollIntoView({behavior:"smooth",block:"center"});}));
+    render();
+    const ct=$("#confToggle"),cb=$("#confBody");
+    ct.addEventListener("click",()=>{const o=ct.classList.toggle("open");ct.innerHTML=`<span class="ar">▸</span> ${o?'Hide':'Show all 28'} presentations`;cb.style.maxHeight=o?cb.scrollHeight+40+"px":"0";});
 
-const badgeColors = {
-  "SJR Q1":{bg:"#f0f4f8",fg:"#4a6785",bd:"#d0dce8"},
-  "UTD24":{bg:"#fef9ec",fg:"#92710a",bd:"#f0dfa0"},
-  "FT50":{bg:"#fdf4ec",fg:"#9e5e1a",bd:"#f0cfaa"},
-  "ABS 4*":{bg:"#ecf7f0",fg:"#1a7a3a",bd:"#b0ddc0"},
-  "ABS 4":{bg:"#eef8f2",fg:"#2a8a4a",bd:"#c0e0cc"},
-  "ABS 3":{bg:"#ecf2fa",fg:"#2a5a9e",bd:"#b0c8e8"},
-  "ABS 2":{bg:"#f0f2f6",fg:"#4a5a7a",bd:"#c8d0e0"},
-  "ABDC A*":{bg:"#f8ecf6",fg:"#8a2a7a",bd:"#e0b0d8"},
-  "ABDC A":{bg:"#f6eff5",fg:"#7a4a72",bd:"#d8c0d2"},
-};
+    /* ---------- connectivity network ---------- */
+    // Core = my guiding philosophy. It DRIVES three connected pillars: research, teaching, service.
+    const NODES=[
+      {id:"philosophy",type:"core",title:"Context, not adversity itself, decides whether hardship constrains or creates.",x:450,y:282},
+      {id:"research",type:"pillar",view:"research",title:"Research",sub:"In entrepreneurship &amp; innovation, adversity is both the defining condition and the hidden engine.",x:450,y:98,c:"var(--accent)"},
+      {id:"teaching",type:"pillar",view:"teaching",title:"Teaching",sub:"Cognitive differences are strengths under the right conditions.",x:198,y:456,c:"var(--c-sage)"},
+      {id:"service",type:"pillar",view:"service",title:"Service",sub:"Widening access &amp; supporting the under-resourced.",x:702,y:456,c:"var(--c-rose)"}
+    ];
+    const EDGES=[["philosophy","research"],["philosophy","teaching"],["philosophy","service"],["research","teaching"],["teaching","service"],["service","research"]];
+    const REL={"philosophy-research":"drives my research thesis","philosophy-teaching":"drives my teaching philosophy","philosophy-service":"drives my service orientation"};
+    const byId={}; NODES.forEach(n=>byId[n.id]=n);
+    const adj={}; NODES.forEach(n=>adj[n.id]=new Set());
+    EDGES.forEach(([a,b])=>{adj[a].add(b);adj[b].add(a);});
+    let netBuilt=false;
+    function buildNet(){
+      if(netBuilt) return; netBuilt=true;
+      const net=$("#network"), svg=$("#netEdges");
+      EDGES.forEach(([a,b])=>{
+        const A=byId[a],B=byId[b], mx=(A.x+B.x)/2,my=(A.y+B.y)/2,dx=B.x-A.x,dy=B.y-A.y,nx=-dy,ny=dx,len=Math.hypot(nx,ny)||1,off=16;
+        const cx=mx+nx/len*off, cy=my+ny/len*off;
+        const p=document.createElementNS("http://www.w3.org/2000/svg","path");
+        p.setAttribute("d",`M${A.x},${A.y} Q${cx},${cy} ${B.x},${B.y}`);
+        p.dataset.a=a; p.dataset.b=b; if(a!=="philosophy"&&b!=="philosophy") p.classList.add("tri"); svg.appendChild(p);
+      });
+      NODES.forEach((n,i)=>{
+        const el=document.createElement(n.type==="core"?"div":"button");
+        el.className="net-node"; el.dataset.id=n.id; el.style.left=(n.x/900*100)+"%"; el.style.top=(n.y/560*100)+"%"; if(n.c)el.style.setProperty("--c",n.c); el.style.animationDelay=(i*70)+"ms";
+        if(n.type==="core"){ el.innerHTML=`<div class="net-core"><div class="k">Guiding idea</div><div class="ln">${n.title}</div></div>`; }
+        else{ el.innerHTML=`<div class="net-pillar"><div class="pt"><span class="dot"></span><span class="nm">${n.title}</span></div><div class="ps">${n.sub}</div></div>`; el.addEventListener("click",()=>navTo(n.view)); }
+        el.addEventListener("mouseenter",()=>hi(n.id)); el.addEventListener("mouseleave",clear);
+        net.appendChild(el);
+      });
+      const cards=[["research","Research","var(--accent)"],["teaching","Teaching & Mentoring","var(--c-sage)"],["recognition","Recognition","var(--c-rose)"],["service","Service","var(--muted-2)"],["contact","Contact","var(--muted-2)"]];
+      const cc=$("#netCards");
+      cards.forEach(([v,l,c])=>{const x=document.createElement("button");x.innerHTML=`<span class="nc-t"><span class="nc-d" style="--c:${c}"></span>${l}</span><span class="nc-a">→</span>`;x.addEventListener("click",()=>navTo(v));cc.appendChild(x);});
+    }
+    function hi(id){
+      const net=$("#network"); net.classList.add("dim");
+      document.querySelectorAll(".net-node").forEach(b=>{b.classList.toggle("hot",b.dataset.id===id); b.classList.toggle("neighbor",adj[id].has(b.dataset.id));});
+      document.querySelectorAll("#netEdges path").forEach(p=>p.classList.toggle("hot",p.dataset.a===id||p.dataset.b===id));
+      if(id==="philosophy"){
+        $("#netCap").innerHTML=`<b>Guiding idea</b> — my research, teaching &amp; service all flow from this one conviction.`;
+      } else {
+        const r=REL["philosophy-"+id]||"";
+        $("#netCap").innerHTML=`<b>${byId[id].title}</b> — ${r} · connected to the other two.`;
+      }
+    }
+    function clear(){const net=$("#network");net.classList.remove("dim");document.querySelectorAll(".net-node").forEach(b=>b.classList.remove("hot","neighbor"));document.querySelectorAll("#netEdges path").forEach(p=>p.classList.remove("hot"));$("#netCap").innerHTML="Hover the centre or a branch to see how the work connects · click a branch to open it.";}
+    function showNet(){ buildNet(); requestAnimationFrame(()=>document.querySelectorAll(".net-node").forEach(b=>b.classList.add("shown"))); }
 
-function badge(t){const c=badgeColors[t]||{bg:"#f5f5f5",fg:"#666",bd:"#ddd"};return `<span style="display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-family:'DM Mono',monospace;font-weight:500;letter-spacing:0.3px;background:${c.bg};color:${c.fg};border:1px solid ${c.bd};margin-right:4px;margin-bottom:3px;">${t}</span>`;}
-
-function statusBadge(s){const isRR=s.includes("R&R"),isRev=s.includes("Under review");const c=isRR?{bg:"#fef9ec",fg:"#92710a",bd:"#f0dfa0"}:isRev?{bg:"#ecf2fa",fg:"#2a5a9e",bd:"#b0c8e8"}:{bg:"#f5f5f5",fg:"#888",bd:"#e0e0e0"};return `<span style="display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500;background:${c.bg};color:${c.fg};border:1px solid ${c.bd};">${s}</span>`;}
-
-function renderPubs(papers){return papers.map(p=>`<div class="fade-in" style="padding:24px 0;border-bottom:1px solid #f0ede8;display:flex;gap:20px;align-items:flex-start;"><div style="font-family:'DM Mono',monospace;font-size:13px;color:#b0a090;min-width:40px;padding-top:3px;font-weight:500;">${p.y}</div><div style="flex:1;"><div style="font-family:'Source Serif 4',serif;font-size:17px;color:#1a1a1a;line-height:1.45;margin-bottom:5px;font-weight:600;">${p.t}</div><div style="font-size:13px;color:#999;margin-bottom:4px;line-height:1.5;">${p.a}</div><div style="font-family:'Source Serif 4',serif;font-size:14px;color:#8a7050;font-style:italic;margin-bottom:10px;">${p.j}, ${p.v}</div><div style="display:flex;flex-wrap:wrap;gap:2px;">${p.b.map(badge).join("")}</div></div></div>`).join("");}
-
-function renderWP(papers){return papers.map(p=>`<div class="fade-in" style="padding:22px 0;border-bottom:1px solid #f0ede8;"><div style="font-family:'Source Serif 4',serif;font-size:17px;color:#1a1a1a;line-height:1.45;margin-bottom:5px;font-weight:600;">${p.t}</div><div style="font-size:13px;color:#999;margin-bottom:8px;">${p.a}</div>${statusBadge(p.s)}</div>`).join("");}
-
-// Stream switching
-let activeStream = "ae";
-const pubList = document.getElementById("publications-list");
-function showStream(s){
-  activeStream = s;
-  document.querySelectorAll(".stream-btn").forEach(b=>b.classList.toggle("active",b.dataset.stream===s));
-  if(s==="ae") pubList.innerHTML = renderPubs(pubsAE);
-  else if(s==="ai") pubList.innerHTML = renderPubs(pubsAI);
-  else pubList.innerHTML = renderWP(wp);
-  observeFadeIns();
-}
-document.querySelectorAll(".stream-btn").forEach(b=>b.addEventListener("click",()=>showStream(b.dataset.stream)));
-showStream("ae");
-
-// Awards
-const awardsData=[
-  {y:"2026",t:"ACERE Conference Best Potential Award"},
-  {y:"2023",t:"Total Defence Awards — NS Advocate Award for Individuals",s:"Ministry of Defense, Singapore"},
-  {y:"2018",t:"Academy of Management Best Paper",s:"Top 5–10% of Accepted Papers"},
-  {y:"2016–23",t:"BCERC Babson College Top 40 Paper",s:"5 times: 2016, 2019, 2020, 2021, 2023"},
-  {y:"2018",t:"All-University Doctoral Prize",s:"Syracuse University — awarded for dissertation"},
-  {y:"2017",t:"Dr. Torpey Teaching Award for PhD Student",s:"Syracuse University"},
-  {y:"2013",t:"Beta Gamma Sigma",s:"Top 20% of graduate students at AACSB business schools"},
-];
-document.getElementById("awards-list").innerHTML = awardsData.map(a=>`<div class="fade-in" style="display:flex;gap:28px;align-items:baseline;padding:18px 0;border-bottom:1px solid #f0ede8;"><div style="font-family:'DM Mono',monospace;font-size:13px;color:#b0a090;min-width:65px;font-weight:500;">${a.y}</div><div><div style="font-family:'Source Serif 4',serif;font-size:16px;color:#1a1a1a;line-height:1.5;font-weight:600;">${a.t}</div>${a.s?`<div style="font-size:13px;color:#999;margin-top:2px;">${a.s}</div>`:""}</div></div>`).join("");
-
-// Media
-const mediaData=[
-  {o:"Fast Company",t:"This Scientist Is Studying How ADHD Can Help Entrepreneurs Succeed",y:"2017"},
-  {o:"HuffPost",t:"ADHD Makes for Better Entrepreneurs",y:""},
-  {o:"Feature",t:"Does Childhood Adversity Make You a Better Entrepreneur?",y:""},
-  {o:"Feature",t:"Entrepreneurship and ADHD: Is There a Fast Company Connection?",y:""},
-];
-document.getElementById("media-list").innerHTML = mediaData.map(m=>`<div class="fade-in card-hover" style="padding:28px 24px;border-radius:8px;border:1px solid #eee;background:#fdfcfa;cursor:default;"><div style="font-size:11px;font-weight:600;color:#8a7050;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;">${m.o}${m.y?` · ${m.y}`:""}</div><div style="font-family:'Source Serif 4',serif;font-size:15px;color:#333;line-height:1.5;">${m.t}</div></div>`).join("");
-
-// Talks
-const talksData=[
-  {y:"2026",t:"Speaker, CUHK-Shenzhen seminar series",f:true},
-  {y:"2024",t:"Keynote Speaker, New Perspectives in Entrepreneurial Diversity and Wellbeing, Trinity College Dublin, Ireland",f:true},
-  {y:"2020–23",t:"Presenter & Discussant, Entrepreneur Well-being Across Contexts Symposium, Academy of Management Conference",f:false},
-  {y:"2021",t:"Speaker & Panelist, Job Market Panel, AOM Entrepreneurship Division Doctoral Consortium",f:false},
-  {y:"2020",t:"Academic Visit, DTU-Technical University of Denmark",f:true},
-  {y:"2019",t:"Academic Visit, Syracuse University",f:true},
-  {y:"2019",t:"Speaker, Asian School of Business seminar series",f:true},
-  {y:"2019",t:"Presenter & Discussant, Future of Research in Entrepreneurship, Innovation & Strategy, Bologna, Italy",f:true},
-  {y:"2018",t:"Keynote Speaker, 3rd Youth Scholar Forum for Entrepreneurship, Hangzhou, China",f:true},
-];
-document.getElementById("talks-list").innerHTML = talksData.map(t=>`<div class="fade-in" style="display:flex;gap:24px;align-items:baseline;padding:16px 0;border-bottom:1px solid #f0ede8;"><div style="font-family:'DM Mono',monospace;font-size:13px;color:#b0a090;min-width:65px;font-weight:500;">${t.y}</div><div style="font-family:'Source Serif 4',serif;font-size:15px;color:#333;line-height:1.5;flex:1;">${t.t}${t.f?` <span style="color:#8a7050;">★</span>`:""}</div></div>`).join("");
-
-// Courses
-const courses = [
-  {n:"Entrepreneurship",type:"core"},{n:"Innovation",type:"core"},{n:"Technology Management",type:"core"},
-  {n:"Human Psychology",type:"core"},{n:"AI in Entrepreneurial Work",type:"new",note:"Self-designed MBA course"},
-];
-document.getElementById("courses-list").innerHTML = courses.map(c=>`<div class="fade-in course-card" style="padding:32px 24px;border-radius:8px;border:${c.type==="new"?"1.5px solid #8a7050":"1px solid #eee"};background:${c.type==="new"?"rgba(138,112,80,0.03)":"#fff"};cursor:default;position:relative;">${c.type==="new"?`<div style="position:absolute;top:-9px;left:16px;padding:2px 10px;background:#8a7050;color:#fff;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">New</div>`:""}<div style="font-family:'Source Serif 4',serif;font-size:17px;color:#1a1a1a;font-weight:600;">${c.n}</div>${c.note?`<div style="font-size:12px;color:#8a7050;margin-top:8px;font-weight:500;">${c.note}</div>`:""}</div>`).join("");
-
-// Students
-const studentsData = [
-  {n:"Haowei Wang",st:"current",p:"2025 – 2029 (expected)",pl:"",u:"National University of Singapore"},
-  {n:"Jia Bao",st:"graduated",p:"2020 – 2024",pl:"City University of Macau (Tenure Track)",u:"National University of Singapore"},
-  {n:"Jipeng Fei",st:"graduated",p:"2019 – 2023",pl:"Beijing Normal University, Zhuhai (Tenure Track)",u:"National University of Singapore"},
-];
-document.getElementById("students-list").innerHTML = studentsData.map(s=>{
-  const isCur = s.st==="current";
-  return `<div class="fade-in" style="padding:28px 32px;border-radius:8px;margin-bottom:14px;border:1px solid #eee;background:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;box-shadow:0 1px 3px rgba(0,0,0,0.02);"><div><div style="font-family:'Playfair Display',serif;font-size:20px;color:#1a1a1a;font-weight:600;margin-bottom:3px;">${s.n}</div><div style="font-size:13px;color:#999;">${s.u} · ${s.p}</div></div><div style="text-align:right;"><span style="display:inline-block;padding:5px 14px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;background:${isCur?"#ecf7f0":"#fef9ec"};color:${isCur?"#1a7a3a":"#92710a"};border:1px solid ${isCur?"#b0ddc0":"#f0dfa0"};">${isCur?"Current":"Graduated"}</span>${s.pl?`<div style="font-size:12.5px;color:#666;margin-top:8px;">→ ${s.pl}</div>`:""}</div></div>`;
-}).join("");
-
-// Reviewer tags
-const journals=["Academy of Management Journal","Strategic Management Journal","Strategic Entrepreneurship Journal","Journal of Management","Journal of Management Studies","Small Business Economics","Technovation","Academy of Management Annual Meeting","Babson Entrepreneurship Conference"];
-document.getElementById("reviewer-tags").innerHTML = journals.map(j=>`<span style="display:inline-block;padding:4px 10px;border-radius:4px;font-size:12px;color:#555;background:#f5f3f0;border:1px solid #e8e4df;">${j}</span>`).join("");
-
-// === SCROLL ANIMATIONS ===
-function observeFadeIns(){
-  const obs = new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
-  },{threshold:0.1});
-  document.querySelectorAll(".fade-in:not(.visible)").forEach(el=>obs.observe(el));
-}
-observeFadeIns();
-
-// Nav scroll effect
-const navbar = document.getElementById("navbar");
-window.addEventListener("scroll",()=>{
-  const scrolled = window.scrollY > 40;
-  navbar.style.background = scrolled ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.8)";
-  navbar.style.borderBottomColor = scrolled ? "#eee" : "transparent";
-});
-
-// Active nav link
-const sections = ["about","research","teaching","students","service","contact"];
-window.addEventListener("scroll",()=>{
-  let current = "about";
-  for(let i=sections.length-1;i>=0;i--){
-    const el = document.getElementById(sections[i]);
-    if(el && el.getBoundingClientRect().top < 200){current=sections[i];break;}
-  }
-  document.querySelectorAll(".nav-link").forEach(l=>{
-    l.classList.toggle("active",l.dataset.section===current);
-  });
-});
-</script>
-
+    /* ---------- router ---------- */
+    const VIEWS=["home","research","teaching","recognition","service","contact"];
+    function showView(id,anchor){
+      if(!VIEWS.includes(id))id="home";
+      document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id===id));
+      document.querySelectorAll("[data-nav]").forEach(a=>a.classList.toggle("active",a.dataset.nav===id));
+      document.querySelectorAll("#"+id+" .reveal").forEach((el,i)=>setTimeout(()=>el.classList.add("in"),30+i*50));
+      if(id==="home")showNet();
+      if(anchor){const el=document.getElementById(anchor);if(el){setTimeout(()=>el.scrollIntoView({behavior:"smooth",block:"start"}),80);return;}}
+      window.scrollTo(0,0); requestAnimationFrame(()=>window.scrollTo(0,0));
+    }
+    const parseHash=()=>location.hash.replace(/^#\/?/,"").split(":");
+    function navTo(v,a){try{location.hash="#/"+v+(a?":"+a:"");}catch(e){}showView(v,a);$("#menu").classList.remove("open");}
+    document.querySelectorAll("[data-view]").forEach(el=>el.addEventListener("click",e=>{e.preventDefault();navTo(el.dataset.view,el.dataset.anchor);}));
+    window.addEventListener("hashchange",()=>{const[v,a]=parseHash();showView(v||"home",a);});
+    $("#menuToggle").addEventListener("click",()=>$("#menu").classList.toggle("open"));
+    (function(){const[v,a]=parseHash();showView(v||"home",a);})();
+  </script>
 </body>
 </html>
